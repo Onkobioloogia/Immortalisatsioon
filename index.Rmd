@@ -351,12 +351,30 @@ Telomeerid lühenevad iga raku jagunemisega S-faasis
 - Rakud lähevad senesentsi kui telomeerid "kuluvad" 4-6 kb pikkusteks.
 
 ---
-## Telomeeride erosioon toimib tuumor-supressor mehhanismina
+## Telomeeride erosioon toimib tuumorsupressor mehhanismina
 
 - Inimese rakkude immortaliseerumisel toimub alati ka telomeeride korrashoiu mehhanismi käivitamine kas **telomeraasi** üle-ekspressiooni või **ALT mehhanismi** käivitamise teel.
 - 60-80% inimese vähkidest on telomeraas positiivsed, viidates et telomeeride erosiooni vältimine on vähis sama tavaline kui Rb ja p53 inaktivatsioon.
 - Tüvirakkudes on telomeraasi aktiivsus madalam kui vähirakkudes ja paljudes normaalsetes jagunevates rakkudes puudub telomeraasi ekspressioon täielikult.
 - Siit võib järeldada, et **telomeeride regeneratsioon on vähis hädavajalik vähirakkude jagunemispotentsiaali säilitamiseks**.
+
+--- &twocol
+## Inhibition of telomerase limits the growth of human cancer cells
+
+***=left
+
+<img src="http://www.nature.com/nm/journal/v5/n10/images/nm1099_1167a.gif" style="width:460px">
+
+***=right
+
+Effects of DN-hTERT on cell proliferation.
+Clonal isolates analyzed are from cell lines LoVo a, HA-1 b, SW613 c, 36M d and GM847 cells e; in order of initial telomere length from shortest (LoVo) to longest (GM847). For each cell line, two clones are shown expressing the control retrovirus ($\square$, $\blacksquare$), WT-hTERT ($\circ$, $\bullet$) or DN-hTERT ($\triangle$, $\blacktriangle$).
+
+<footer class="source">Ref.: 
+<a href="http://www.nature.com/nm/journal/v5/n10/full/nm1099_1164.html">
+Hahn et al., 1999.
+</a>
+</footer> 
 
 ---&twocol
 # Telomeraas ja ALT
@@ -397,7 +415,7 @@ Cesare & Reddel, 2010.
 </footer> 
 
 --- &twocol
-## Telomeraasi aktiivsus vähis
+## Telomeraasi üle-ekpressioon vähis
 
 ***=left
 ```{r telomeraas, echo=FALSE, fig.show='asis'}
@@ -647,14 +665,42 @@ Increased Incidence of Skin Lesions, Alopecia, and Hair Graying in Aging mTR−/
 <a href="http://www.sciencedirect.com/science/article/pii/S0092867400805802">Rudolph, 1999</a>
 </footer>
 
----
-## Lingid
+---&twocol
+# Telomere dysfunction promotes non-reciprocal translocations and epithelial cancers in mice
 
-- [Senescence: Cells, ageing and cancer](http://www.nature.com/nature/focus/senescence/)
-- [Intrinsic tumour suppression](http://www.nature.com/nature/journal/v432/n7015/full/nature03098.html)
-- [Clearance of p16Ink4a-positive senescent cells delays ageing-associated disorders](http://www.nature.com/nature/journal/v479/n7372/full/nature10600.html)
-- [Opposing roles for p16Ink4a and p19Arf in senescence and ageing caused by BubR1 insufficiency](http://www.nature.com/ncb/journal/v10/n7/full/ncb1744.html)
-- [BubR1 insufficiency causes early onset of aging-associated phenotypes and infertility in mice](http://www.nature.com/ng/journal/v36/n7/full/ng1382.html)
-- [Progeria syndromes and ageing: what is the connection](http://www.nature.com/nrm/journal/v11/n8/full/nrm2944.html)
-- [Telomeres:  Ageing hard or hardly ageing](http://www.nature.com/nature/journal/v398/n6724/full/398191a0.html)
-- [RTEL1](http://www.sciencedirect.com/science/article/pii/S0092867412004187)
+***=right
+
+Kaplan–Meier analysis of tumour incidence in p53 mutant mice divided on the basis of generation of telomerase deficiency.
+
+Telomere attrition in ageing telomerase-deficient p53 mutant mice promotes the development of epithelial cancers by a process of fusion-bridge breakage that leads to the formation of complex non-reciprocal translocations—a classical cytogenetic feature of human carcinomas.
+
+***=left
+
+<img src="http://www.nature.com/nature/journal/v406/n6796/images/406641aa.2.jpg" style="width:360px">
+
+<footer class="source"> Pilt: 
+<a href="http://www.nature.com/nature/journal/v406/n6796/full/406641a0.html">
+Artandi et al., 2000.
+</a>
+</footer>
+
+---
+## Lingid eelmistele loengutele
+
+1. [Sissejuhatav loeng](http://rpubs.com/tapa741/sissejuhatus)
+
+2. [Vähitüübid](http://rpubs.com/tapa741/vahityybid)
+
+3. [Onkoviirused](http://tpall.github.io/Onkoviirused)
+
+4. [Onkogeenid](http://tpall.github.io/Onkogeenid)
+
+5. [Retseptorid](http://tpall.github.io/Retseptorid)
+
+6. [Signaalirajad](http://tpall.github.io/Signaalirajad)
+
+7. [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
+
+8. [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
+
+9. [p53 ja apoptoos ](http://tpall.github.io/p53-ja-apoptoos)
