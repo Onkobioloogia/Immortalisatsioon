@@ -3,4 +3,5 @@ boot
 ggplot2
 ggthemes
 knitr
+magrittr
 plyr

@@ -74,6 +74,20 @@ background-color: #CBE7A5; /* ; ; */
 ---
 ## p53 kontrollib rakkude jagunemist ja apoptoosi
 
+Vastusena DNA kahjustustele või onkogeensele stressile p53 stabiliseeritakse ja indutseerub p53 märklaudgeenide ekspressioon, mille seas on rakutsükli inhibiitorid (**p21cip1**) ja proapoptootilised valgud (**BAX** BH3 only). 
+
+![p53](http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg)
+
+---
+## p53 on muteerunud kuni pooltes kasvajates
+
+
+<img src="assets/img/prevalence-1.png" style="width:400px">
+
+<footer class="source">Andmed: 
+IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, Tavtigian SV, Hainaut P, Olivier M. Impact of mutant p53 functional properties on TP53 mutation patterns and tumor phenotype: lessons from recent developments in the IARC TP53 database.Hum Mutat. 2007 Jun;28(6):622-9.
+</footer>
+
 
 --- .segue .dark .nobackground
 ## Senesents ja immortalisatsioon
