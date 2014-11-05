@@ -321,7 +321,7 @@ Allsopp et al., 1992.
 # Telomeeride lühenemine lõppeb kriisiga ja võib põhjustada immortalisatsiooni
 
 - SV40 large-T transformeeritud inimese neeru fibroblastid (HEK) jagunevad kuni telomeeride lühenemiseni ~1.5 kb pikkusteks.
-- Lühenenud telomeerid põhjustavad rakkudes nö. kriisi, millest vähesed ellujöövad kloonid väljuvad immortaliseerununa.
+- Lühenenud telomeerid põhjustavad rakkudes nö. kriisi, millest vähesed ellujäävad kloonid väljuvad immortaliseerununa.
 - Immortaliseerunud rakud ekspresseerivad telomeraasi.
 
 ***=left
