@@ -147,6 +147,17 @@ Serrano et. al, 1997
 - *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumorsupressor mehhanismina.
 - Onkogeenide põhjustatud senesents on aktiivne protsess ning pole põhjustatud replikatiivse potentsiaali kadumisest (telomeerid on neis rakkudes ok!).
 
+---
+# Premalignant lung adenomas induced by oncogenic K-ras are positive for markers of senescence, whereas malignant adenocarcinomas are negative.
+
+![](http://www.nature.com/nature/journal/v436/n7051/images/436642a-f1.2.jpg)
+
+<footer class="source">Pilt: 
+<a href="http://www.nature.com/nature/journal/v436/n7051/fig_tab/436642a_F1.html">
+Collado et al., 2004
+</a>.
+</footer>
+
 ---&twocol
 ## OIS on põhjustatud DNA kahjustustest
 
