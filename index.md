@@ -529,6 +529,30 @@ Artandi et al., 2000.
 </a>
 </footer>
 
+---&twocol
+## Põletiku ja vähi seos: lühenenud telomeerid
+
+Põletikuline soolehaigus (*ulcerative colitis*) on seotud kõrge kolorektaalvähi riskiga ja seda tingituna genoomsest edastabiilsusest.
+- Telomeeride pikkus korreleerub kromosomaalse ebastabiilsusega selles vähieelses seisundis.
+- Soolehaigete patsientide käärsoole epiteelis kellel on vähikolded juba välja arenenud esinevad anafaasi sillad (BFB tunnus) ja muud kromosoomi aberratsioonid.
+
+***=right
+
+<img src="http://www.nature.com/ng/journal/v32/n2/images/ng989-F4.gif" style="width:250px">
+
+***=left
+
+<p style="font-size:10pt"> 
+Higher frequency of anaphase bridges in UC progressors.
+<b>a</b>, Representative images of anaphase bridges in the colon. <b>b</b>, Occurrence of anaphase bridges in non-UC controls, UC non-progressors and UC progressors, expressed as a percentage of the total cell number. Bars indicate group means plusminus s.e.m.
+</p>
+
+<footer class="source">Ref:
+<a href="http://www.nature.com/ng/journal/v32/n2/full/ng989.html">
+O'Sullivan et al., 2002.
+</a>
+</footer>
+
 ---
 ## Lingid eelmistele loengutele
 
