@@ -84,6 +84,14 @@ Vastusena DNA kahjustustele või onkogeensele stressile p53 stabiliseeritakse ja
 
 ![p53](http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg)
 
+
+
+<footer class="source">Pilt: 
+<a href="http://www.nature.com/nrc/journal/v6/n1/fig_tab/nrc1780_F4.html">
+p21 and DNA damage signalling.
+</a>
+</footer>
+
 ---
 ## p53 on muteerunud kuni pooltes kasvajates
 
@@ -216,6 +224,30 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
 
 ![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
+
+---&twocol
+## Koekultuuri stress indutseerib senesentsi
+
+***=left
+
+Oksütatiivse stressi tingimustes (20% $O_2$) kasvatatud rakud läbivad vähem pooldumisi.
+
+![stress](assets/img/Chen1995pnas.png)
+
+***=right
+
+Normaalsed epiteelirakud sõltuvad stroomarakkude toetusest. Kui inimese eesnaha keratinotsüüte kasvatada puhta kultuurina ilma feederrakkudeta indutseerub neis kiirelt rakutsükli blokk läbi p16ink4a ekspressiooni.
+
+<img src="assets/img/plastic.jpg" style="width:300px">
+
+<footer class="source">Pildid: 
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC41939/?page=1">
+Chen et al., 1995
+</a>, 
+<a href="http://cancerres.aacrjournals.org/content/63/22/7815.long">
+Fu et al., 2003
+</a>.
+</footer> 
 
 ---
 ## Telomeerid
