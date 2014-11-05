@@ -358,7 +358,7 @@ Telomeerid lühenevad iga raku jagunemisega S-faasis
 Telomeraasi holoensüüm koosneb kahest konserveerunud komponendist: 
 - **Telomeraas** (**TERT**), mis sisaldab telomeraasi pöördtranskriptaasi domääni ja 
 - **RNA** **TR** (**TERC**), mis moodustab TERT-iga kompleksi ja **toimib praimerina** telomeersete korduste sünteesil.
-- Lisaks on kompleksis ka **dyskerin**.
+- Lisaks on kompleksis ka **dyskerin**, mis stabiliseerib telomeraasi holoensüümi.
 - Mutatsioonid TERT, TR või DKC1 geenides põhjustavad inimesel telomeerseid sündroome.
 
 ***=right
