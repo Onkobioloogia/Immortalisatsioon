@@ -1,0 +1,18 @@
+---
+title: "Geenid mis indutseerivad senesentsi"
+output: html_document
+---
+
+Gene | Alteration in cancer |  Context | Cell type	| Tumor/Tissue  |	References
+-----|------------------------------------|----------------------------------------|---------------------------------------------|----------------------------------------------|-----
+Oncogenes | - | - | - | - | -
+Ras |	GOF mutation	| Expression of mutant allele	| HDF and MEF*	| Lung adenomas; atherosclerotic lesions; mammary epithelial hyperplasia	| Serrano et al., 1997; Collado et al., 2005; Minamino et al., 2003; Sarkisian et al., 2007
+Raf	| GOF mutation	| Expression of mutant allele	| HDF; MEF*; melanocytes | Lung adenomas |	Dankort et al., 2007; Michaloglou et al., 2005
+Akt	| GOF mutation	| Overexpression of myristoylated allele | Endothelial cells and MEF | |	Chen et al., 2005; Miyauchi et al., 2004
+E2F1/3	| Amplification	| Overexpression	| HDF	| Pituitary gland hyperplasia	| Dimri et al., 2000; Lazzerini Denchi et al., 2005
+Cyclin E | Amplification | Overexpression	| U20S	| |	Bartkova et al., 2006
+mos	| Translocation/Overexpression | Overexpression	| HDF	| |	Bartkova et al., 2006
+cdc6 | Overexpression | Overexpression | HDF | | Bartkova et al., 2006
+Tumor suppressors | - | -  | - | - | -
+PTEN | LOF mutation	| Inactivation | MEF and IMR90 | HG-PIN	| Chen et al., 2005; Courtois-Cox et al., 2006
+NF1 | LOF mutation | Inactivation |	HDF |	Dermal benign neurofibroma | Courtois-Cox et al., 2006
