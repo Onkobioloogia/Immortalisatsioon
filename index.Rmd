@@ -339,7 +339,7 @@ Counter et al., 1992.
 </footer> 
 
 ---
-## Telomere lühenemine ehk "*end replication problem*"
+## Telomeeride lühenemine ehk "*end replication problem*"
 
 Telomeerid lühenevad iga raku jagunemisega S-faasis
 - DNA otste replikatsiooni probleem "*end replication problem*":

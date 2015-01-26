@@ -66,6 +66,9 @@ background-color: #CBE7A5; /* ; ; */
 </style>
 
 
+```
+## Need help? Try the ggplot2 mailing list: http://groups.google.com/group/ggplot2.
+```
 
 
 --- .segue .dark .nobackground
@@ -333,7 +336,7 @@ Counter et al., 1992.
 </footer> 
 
 ---
-## Telomere lühenemine ehk "*end replication problem*"
+## Telomeeride lühenemine ehk "*end replication problem*"
 
 Telomeerid lühenevad iga raku jagunemisega S-faasis
 - DNA otste replikatsiooni probleem "*end replication problem*":
