@@ -2,7 +2,7 @@
 title       : Rakkude senesents ja immortaliseerumine 
 subtitle    : Onkobioloogia
 author      : Taavi Päll
-job         : vanemteadur, VTAK
+job         : lektor, TTÜ
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -66,9 +66,6 @@ background-color: #CBE7A5; /* ; ; */
 </style>
 
 
-```
-## Need help? Try the ggplot2 mailing list: http://groups.google.com/group/ggplot2.
-```
 
 
 --- .segue .dark .nobackground
@@ -104,6 +101,23 @@ IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, 
 ## Senesents ja immortalisatsioon
 
 ---
+## Rakkude jagunemispotensiaal koekultuuris on piiratud 
+
+![](http://www.nature.com/nrm/journal/v1/n1/images/nrm1000_072a_f3.gif)
+
+<footer class="source">Pilt: Hayflick limit. Phase I is the primary culture; phase II represents subcultivated cells during the period of exponential replication. Phase III represents the period when cell replication ceases but metabolism continues. Cells may remain in this state for at least one year before death occurs.
+
+</footer>
+
+---
+## Rakkude jagunemispotentsiaal langeb vanusega
+
+
+![](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
+
+
+
+---
 ## Onkogeenne Ras vajab transformeerimiseks lisajõude
 
 - Onkogeenselt aktiveeritud Ras valgud on võimelised transformeerima immortaliseeritud hiire rakke  ([Der et al., 1982](http://dx.doi.org/10.1073/pnas.79.11.3637); [Parada et al., 1982](http://www.nature.com/doifinder/10.1038/297474a0)). 
@@ -117,7 +131,7 @@ IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, 
 ***=left
 
 - Normaalsete inimese või hiire ja roti fibroblastide transformeerimisel H-RasV12-ga blokeerub nende rakkude jagunemine palju varem kui nad saavutavad konfluentsuse. 
-- See jagunemise blokk on pöördumatu (**senesents**) ja sellega kaasneb p53 ja p16INK4a valkude akumulatsioon.
+- See jagunemise blokk on pöördumatu (**senesents**) ja sellega kaasneb p53 ja p21Cip1 ning p16INK4a valkude akumulatsioon.
 - Rakkude minemist senesentsi on võimalik vältida kui p53 neutraliseerida, näiteks adenoviiruse E1A valgu transfekteerimisel.
 
 ***=right
@@ -130,18 +144,13 @@ Serrano, 1997
 </a>
 </footer>
 
---- .segue
-
-<q> We propose that premature induction of senescence in response to abnormal mitogenic signaling is a mechanism of tumor suppression.</q> 
-Serrano et. al, 1997
-
 ---
 ## Onkogeen indutseeritud senesents
 
 - **OI senesents on tuumorsuppressor mehhanism** mis toimib healoomulised kasvajates ([onkogeensete radade aktivatsioon normaalsetes rakkudes põhjustas kiire jagunemise bloki](#7)).
 - Pahaloomulistes kasvajates on OI mehhanismid juba tasalülitatud (mutatsioonid p53-s ja RB-s, telomeraas).
 - Mutatsioonid K-ras, B-raf, PTEN ja NF1 geenis käivitavad rakkudel senesentsi ka *in vivo*.
-- *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumorsupressor mehhanismina.
+- *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumor-suppressor mehhanismina.
 - Onkogeenide põhjustatud senesents on aktiivne protsess ning pole põhjustatud replikatiivse potentsiaali kadumisest (telomeerid on neis rakkudes ok!).
 
 ---
@@ -160,7 +169,7 @@ Collado et al., 2004
 
 ***=left
 
-- Samas onkogeenide poolt indutseeritud stress on ilmselt põhjustatud DNA kahjustuste poolt mis on tekkinud kas
+- Onkogeenide poolt indutseeritud stress on põhjustatud ka DNA kahjustuste poolt mis on tekkinud kas
     - hapnikuradikaalidest (ROS) ([Lee et al., 1999](http://www.nature.com/onc/journal/v27/n20/full/1210950a.html#bib29))või
     - ülemäärasest replikatsioonist ([Bartkova et al., 2006](http://www.nature.com/onc/journal/v27/n20/full/1210950a.html#bib2)).
 - Senesentsi pöördumatuse tingivad ulatuslikud kromatiinimodifikatsioonid (metülatsioon) mis väljenduvad heterokromatiinsete fookuste (*senescence-associated heterochromatic foci*) näol.
@@ -348,7 +357,7 @@ Telomeerid lühenevad iga raku jagunemisega S-faasis
 - Rakud lähevad senesentsi kui telomeerid "kuluvad" 4-6 kb pikkusteks.
 
 ---
-## Telomeeride erosioon toimib tuumorsupressor mehhanismina
+## Telomeeride erosioon toimib tuumor-suppressor mehhanismina
 
 - Inimese rakkude immortaliseerumisel toimub alati ka telomeeride korrashoiu mehhanismi käivitamine kas **telomeraasi** üle-ekspressiooni või **ALT mehhanismi** käivitamise teel.
 - 60-80% inimese vähkidest on telomeraas positiivsed, viidates et telomeeride erosiooni vältimine on vähis sama tavaline kui Rb ja p53 inaktivatsioon.
@@ -556,6 +565,14 @@ O'Sullivan et al., 2002.
 </a>
 </footer>
 
+---
+## Telomeerid vähi arengus
+
+![](http://www.med.nyu.edu/skirball-lab/sfeirlab/Research_files/shapeimage_4.png)
+
+<footer class="source">Pilt: Skirball Institute of Biomolecular Medicine.
+</footer>
+
 --- .segue .dark .nobackground
 
 ## Lingid teistele loengutele
@@ -564,13 +581,13 @@ O'Sullivan et al., 2002.
 
 ***=left 
 
-- [Sissejuhatav loeng](http://rpubs.com/tapa741/sissejuhatus)
-- [Vähitüübid](http://rpubs.com/tapa741/vahityybid)
+- [Sissejuhatav loeng](http://tpall.github.io/sissejuhatus)
+- [Vähitüübid](http://tpall.github.io/Vahityybid)
 - [Onkoviirused](http://tpall.github.io/Onkoviirused)
 - [Onkogeenid](http://tpall.github.io/Onkogeenid)
 - [Retseptorid](http://tpall.github.io/Retseptorid)
 - [Signaalirajad](http://tpall.github.io/Signaalirajad)
-- [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
+- [Tuumor-suppressorgeenid](http://tpall.github.io/Tuumorsupressorid)
 - [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
 
 
