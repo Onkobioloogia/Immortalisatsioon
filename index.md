@@ -178,7 +178,7 @@ Collado et al., 2004
 
 <img src="http://images.the-scientist.com/content/figures/0890-3670-050328-14-1-1.jpg" style="width:300px" >
 
-# HP1-beta akumuleerumine kromatiinile initseerib DNA kahjustuste parandamise mehhanismid
+# HP1-beta ja PML valkude akumuleerumine kromatiinile initseerib DNA kahjustuste parandamise mehhanismid
 
 <footer class="source">
 Pilt: the-scientist.com
