@@ -121,6 +121,34 @@ IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, 
 
 ![](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
 
+---
+## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
+
+![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
+
+---&twocol
+## Koekultuuri stress indutseerib senesentsi
+
+***=left
+
+Oksütatiivse stressi tingimustes (20% $O_2$) kasvatatud rakud läbivad vähem pooldumisi.
+
+![stress](assets/img/Chen1995pnas.png)
+
+***=right
+
+Normaalsed epiteelirakud sõltuvad stroomarakkude toetusest. Kui inimese eesnaha keratinotsüüte kasvatada puhta kultuurina ilma feederrakkudeta indutseerub neis kiirelt rakutsükli blokk läbi p16ink4a ekspressiooni.
+
+<img src="assets/img/plastic.jpg" style="width:300px">
+
+<footer class="source">Pildid: 
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC41939/?page=1">
+Chen et al., 1995
+</a>, 
+<a href="http://cancerres.aacrjournals.org/content/63/22/7815.long">
+Fu et al., 2003
+</a>.
+</footer> 
 
 
 ---
@@ -245,34 +273,6 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 
 <p style="font-size:10pt">Lühendid: GOF, gain of function; HDF, human diploid fibroblast (IMR90 ja BJ); LOF, loss of function; MEF, murine embryonic fibroblast; HG-PIN, high-grade prostatic intrapithelial neoplasia. MEF*: senesetsi indutseerimiseks on vajalik üleekspressioon. Tabel: <a href="http://www.nature.com/onc/journal/v27/n20/full/1210950a.html">Courtois-Cox, 2008</a></p>
 
----
-## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
-
-![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
-
----&twocol
-## Koekultuuri stress indutseerib senesentsi
-
-***=left
-
-Oksütatiivse stressi tingimustes (20% $O_2$) kasvatatud rakud läbivad vähem pooldumisi.
-
-![stress](assets/img/Chen1995pnas.png)
-
-***=right
-
-Normaalsed epiteelirakud sõltuvad stroomarakkude toetusest. Kui inimese eesnaha keratinotsüüte kasvatada puhta kultuurina ilma feederrakkudeta indutseerub neis kiirelt rakutsükli blokk läbi p16ink4a ekspressiooni.
-
-<img src="assets/img/plastic.jpg" style="width:300px">
-
-<footer class="source">Pildid: 
-<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC41939/?page=1">
-Chen et al., 1995
-</a>, 
-<a href="http://cancerres.aacrjournals.org/content/63/22/7815.long">
-Fu et al., 2003
-</a>.
-</footer> 
 
 ---
 ## Telomeerid
