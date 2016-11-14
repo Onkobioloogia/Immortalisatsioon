@@ -133,7 +133,7 @@ p21 and DNA damage signalling.
 ---
 ## Rakkude jagunemispotentsiaal langeb vanusega
 
-Vananedes rakkude jagunemispotentsiaal väheneb. Naha keratinotsüütide puhul väljendub see keratinotsüütide kihi õhenemises ja selle koe lainelise arhidektuuri kadumises.
+Vananedes rakkude jagunemispotentsiaal väheneb. Naha keratinotsüütide puhul väljendub see keratinotsüütide kihi õhenemises ja selle koe lainelise arhitektuuri kadumises.
 
 ![nahk](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
 
