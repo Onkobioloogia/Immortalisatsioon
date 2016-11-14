@@ -140,9 +140,18 @@ Vananedes rakkude jagunemispotentsiaal väheneb. Naha keratinotsüütide puhul v
 ---
 ## Vähirakkude jagunemine ja tuumori suurus
 
-40 rakugeneratsiooni eraldab algset vähirakku lõpp-staadiumi kasvajast
+Lähtudes eksponentsiaalse kasvu kineetikast, eraldab algset vähirakku lõpp-staadiumi kasvajast umbes 40 rakugeneratsiooni
 
 ![Mathematical representation of the theoretical growth (size) of breast cancer plotted against time in years based on a constant cellular doubling time of 100 days. (Wertheimer MD, Costanza ME, Dodson TF et al: Increasing the effort toward breast cancer detection. JAMA 255: 1311 –1315, 1986](https://www.glowm.com/resources/glowm/cd/graphics/figures/v1/0260/003f.jpg)
+
+---
+
+- Reaalsuses on vähirakkude jagunemine suures osas mitteproduktiivne ja igas generatsioonis läheb suur osa rakke apoptoosi.
+- Seega on vaja suure kasvaja tekkeks oluliselt rohkem jagunemisi kui maksimaalsed 50-60.
+- 50 kuni 60 jagunemisega saaks eksponentsiaalse kasvu korral vähimassi, milles oleks 10^18^ rakku $\cong$ 10^9^ cm^3^ $\cong$ 10^6^ kg.
+
+![](https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg)
+
 
 ---
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
