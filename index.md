@@ -117,6 +117,15 @@ p21 and DNA damage signalling.
 </footer>
 
 ---
+
+
+- Inimese või närilise embrüo fibroblastidel on koekultuuris ainult piiratud jagunemisvõime  
+- Rakud lõpetavad jagunemise kusagil peale 60 jagunemist
+- Sellised mittejagunevad rakud on saavutanud replikatiivse vananemise seisundi (*repilcative senescence*/*senescence*)
+- Senesentsed rakud jäävad metaboolselt aktiivseks kuid nõivad olevat kaotanud jäädavalt võime siseneda aktiivselt rakutsükklisse.
+- Kasvufaktorite olemasolul võivad sellised sellised senesentsed rakud püsida koekultuuris elus pikalt.
+
+---
 ## Rakkude jagunemispotentsiaal langeb vanusega
 
 
