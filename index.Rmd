@@ -128,6 +128,14 @@ p21 and DNA damage signalling.
 
 ![](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
 
+
+---
+## Vähirakkude jagunemine ja tuumori suurus
+
+40 rakugeneratsiooni eraldab algset vähirakku lõpp-staadiumi kasvajast
+
+![Mathematical representation of the theoretical growth (size) of breast cancer plotted against time in years based on a constant cellular doubling time of 100 days. (Wertheimer MD, Costanza ME, Dodson TF et al: Increasing the effort toward breast cancer detection. JAMA 255: 1311 –1315, 1986](https://www.glowm.com/resources/glowm/cd/graphics/figures/v1/0260/003f.jpg)
+
 ---
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
 
