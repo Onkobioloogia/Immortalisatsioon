@@ -89,8 +89,8 @@ IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, 
 
 ***=left
 - Vastusena DNA kahjustustele või onkogeensele stressile p53 stabiliseeritakse ja indutseerub p53 märklaudgeenide ekspressioon, 
-- mille seas on rakutsükli inhibiitorid (**p21cip1**) ja proapoptootilised valgud (**BAX** BH3 only). 
-- surmaretseptor FAS, mis muudab rakud tundlikuks Fas ligandile FasL 
+- mille seas on rakutsükli inhibiitorid (**p21cip1**) ja proapoptootilised valgud (**BAX** BH3 only), 
+- surmaretseptor FAS, mis muudab rakud tundlikuks Fas ligandile FasL, 
 - sekreteeritav IGFBP-3, mis seob IGF-1 ja -2 surudes alla ellujäämist soodustavat signalisatsiooni.
 
 ***=right
