@@ -167,6 +167,13 @@ Lähtudes eksponentsiaalse kasvu kineetikast, eraldab algset vähirakku lõpp-st
 
 ![](https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg)
 
+---
+## Stress ja kriis
+
+- Inimese kehas olevatel rakkudel on limiteeritud jagunemiste arv.
+- Kui suure vähi tekkeks on rakukloonil vaja läbida 100 jagunemist, siis kasutaks tekkinud pahaloomuline rakk oma jagunemispotentsiaali ära ammu enne kui ta ohtlikuks muutuks.
+- Kuidas üldse rakk kontrollib oma jagunemiste arvu, see peab toimuma igas rakus autonoomselt?
+- Kaks regulatoorset mehhanismi, mis kontrollivad rakkude jagunemispotentsiaali: kumulatiivne **stress** ja **kriis**, kui kogu jagunemiste arv on ära kasutatud.
 
 ---
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
