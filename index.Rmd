@@ -46,13 +46,22 @@ $(function() {
 em {
   font-style: italic
 }
-</style>
 
 <!-- Bold -->
-<style>
+
 strong {
   font-weight: bold;
 }
+
+<!-- Superscript -->
+sup {
+  top: -0.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
 </style>
 
 <style>
