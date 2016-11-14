@@ -1,5 +1,5 @@
 ---
-title       : Rakkude senesents ja immortaliseerumine 
+title       : Rakkude vananemine ja immortaliseerumine 
 subtitle    : Onkobioloogia
 author      : Taavi Päll
 job         : lektor, TTÜ
@@ -57,10 +57,10 @@ strong {
 
 <style>
 .title-slide {
-background-image:url(http://www.scientificamerican.com/sciam/cache/file/02F149AA-8D1E-494C-85C9AE79392A2DB8_article.jpg?88DC2);
+background-image:url(http://www.newsmax.com/Newsmax/files/5d/5dd1058d-4cde-4665-a136-69da850af0ac.jpg);
 background-repeat: no-repeat;
-background-position: 73% 17%;
-background-size: 25%;
+background-position: 80% 8%;
+background-size: 50%;
 background-color: #CBE7A5; /* ; ; */
 }
 </style>
@@ -72,6 +72,9 @@ library(ggplot2)
 library(ggthemes)
 library(boot)
 ```
+
+<footer class="source">Esilehe pilt: newsmax.com
+</footer>
 
 
 --- .segue .dark .nobackground
