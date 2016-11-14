@@ -81,21 +81,6 @@ library(boot)
 ## Recap
 
 ---
-## p53 kontrollib rakkude jagunemist ja apoptoosi
-
-Vastusena DNA kahjustustele või onkogeensele stressile p53 stabiliseeritakse ja indutseerub p53 märklaudgeenide ekspressioon, mille seas on rakutsükli inhibiitorid (**p21cip1**) ja proapoptootilised valgud (**BAX** BH3 only). 
-
-![p53](http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg)
-
-
-
-<footer class="source">Pilt: 
-<a href="http://www.nature.com/nrc/journal/v6/n1/fig_tab/nrc1780_F4.html">
-p21 and DNA damage signalling.
-</a>
-</footer>
-
----
 ## p53 on muteerunud kuni pooltes kasvajates
 
 
@@ -105,6 +90,25 @@ p21 and DNA damage signalling.
 IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, Tavtigian SV, Hainaut P, Olivier M. Impact of mutant p53 functional properties on TP53 mutation patterns and tumor phenotype: lessons from recent developments in the IARC TP53 database.Hum Mutat. 2007 Jun;28(6):622-9.
 </footer>
 
+---&twocol
+## p53 kontrollib rakkude jagunemist ja apoptoosi
+
+***=left
+- Vastusena DNA kahjustustele või onkogeensele stressile p53 stabiliseeritakse ja indutseerub p53 märklaudgeenide ekspressioon, 
+- mille seas on rakutsükli inhibiitorid (**p21cip1**) ja proapoptootilised valgud (**BAX** BH3 only). 
+- surmaretseptor FAS, mis muudab rakud tundlikuks Fas ligandile FasL 
+- sekreteeritav IGFBP-3, mis seob IGF-1 ja -2 surudes alla ellujäämist soodustavat signalisatsiooni.
+
+***=right
+![p53](http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg)
+
+
+
+<footer class="source">Pilt: 
+<a href="http://www.nature.com/nrc/journal/v6/n1/fig_tab/nrc1780_F4.html">
+p21 and DNA damage signalling.
+</a>
+</footer>
 
 --- .segue .dark .nobackground
 ## Senesents ja immortalisatsioon
