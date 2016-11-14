@@ -148,7 +148,7 @@ Lähtudes eksponentsiaalse kasvu kineetikast, eraldab algset vähirakku lõpp-st
 
 - Reaalsuses on vähirakkude jagunemine suures osas mitteproduktiivne ja igas generatsioonis läheb suur osa rakke apoptoosi.
 - Seega on vaja suure kasvaja tekkeks oluliselt rohkem jagunemisi kui maksimaalsed 50-60.
-- 50 kuni 60 jagunemisega saaks eksponentsiaalse kasvu korral vähimassi, milles oleks 10^18^ rakku $\cong$ 10^9^ cm^3^ $\cong$ 10^6^ kg.
+- 50 kuni 60 jagunemisega saaks eksponentsiaalse kasvu korral vähimassi, milles oleks 10^^18^^ rakku $\cong$ 10^^9^^ cm^^3^^ $\cong$ 10^^6^^ kg.
 
 ![](https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg)
 
