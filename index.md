@@ -135,7 +135,7 @@ p21 and DNA damage signalling.
 
 Vananedes rakkude jagunemispotentsiaal väheneb. Naha keratinotsüütide puhul väljendub see keratinotsüütide kihi õhenemises ja selle koe lainelise arhitektuuri kadumises.
 
-![nahk](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
+![noor vs vana nahk](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
 
 ---
 ## Vähirakkude jagunemine ja tuumori suurus
