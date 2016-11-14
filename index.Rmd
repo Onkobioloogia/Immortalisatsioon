@@ -204,6 +204,15 @@ Fu et al., 2003
 </a>.
 </footer> 
 
+---
+## Tsükliinkinaasi inhibiitorite induktsioon
+
+
+![p21 ja p16 induktsioon jagunevates inimese endomeetriumi fibroblastides](http://ars.els-cdn.com/content/image/1-s2.0-S0014482704002551-gr5.jpg)
+
+
+<footer class="source">Kinetics of p16INK4a and p21CIP1 accumulation in different strains of human fibroblasts. Total cell lysates were prepared at different population doublings throughout the life span of each cell strain and equivalent samples (20 μg protein) were analyzed by immunoblotting for p16INK4a, p21CIP1 and Cdk4 as indicated. Numbers above the lanes indicate the population doubling of each sample and how this relates to the projected life span. (A) ESC cells. (B) IDF cells. (C) Q34 cells. (D) Comparison of the total levels of p16INK4a and other relevant proteins in different fibroblast strains at approximately 50% of their projected life spans; 20-μg samples of protein in each case. Experimental Cell Research Volume 298, Issue 2, 15 August 2004, Pages 549–559
+</footer>
 
 ---
 ## Onkogeenne Ras vajab transformeerimiseks lisajõude
