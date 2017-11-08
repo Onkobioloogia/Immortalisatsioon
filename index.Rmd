@@ -7,14 +7,13 @@ output: xaringan::moon_reader
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
+knitr::opts_chunk$set(echo = FALSE, fig.align = 'center', out.width = '50%')
 library(knitr)
 library(plyr)
 library(ggplot2)
 library(ggthemes)
 library(boot)
 ```
-
 
 ---
 class: inverse, middle, center
@@ -25,7 +24,7 @@ class: inverse, middle, center
 
 ## p53 on muteerunud kuni pooltes kasvajates
 
-```{r, out.width=400}
+```{r}
 knitr::include_graphics("figures/prevalence-1.png")
 ```
 
@@ -44,7 +43,7 @@ IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, 
 
 ]
 .pull-right[
-```{r, fig.cap="p53"}
+```{r}
 knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg")
 ```
 ]
@@ -58,12 +57,12 @@ p21 and DNA damage signalling.
 
 ---
 class: inverse, middle, center
-## Senesents ja immortalisatsioon
+# Senesents ja immortalisatsioon
 
 ---
 ## Rakkude jagunemispotensiaal koekultuuris on piiratud 
 
-```{r, fig.cap=""}
+```{r}
 knitr::include_graphics("http://www.nature.com/nrm/journal/v1/n1/images/nrm1000_072a_f3.gif")
 ```
 
@@ -80,7 +79,7 @@ knitr::include_graphics("http://www.nature.com/nrm/journal/v1/n1/images/nrm1000_
 - Senesentsed rakud jäävad metaboolselt aktiivseks kuid nõivad olevat kaotanud jäädavalt võime siseneda aktiivselt rakutsükklisse.
 - Kasvufaktorite olemasolul võivad sellised sellised senesentsed rakud püsida koekultuuris elus pikalt.
 
-```{r, fig.cap="a-b-Gal"}
+```{r}
 knitr::include_graphics("http://content.presspage.com/uploads/1369/senescence.jpg")
 ```
 
@@ -92,7 +91,7 @@ knitr::include_graphics("http://content.presspage.com/uploads/1369/senescence.jp
 
 Vananedes rakkude jagunemispotentsiaal väheneb. Naha keratinotsüütide puhul väljendub see keratinotsüütide kihi õhenemises ja selle koe lainelise arhitektuuri kadumises.
 
-```{r, fig.cap="noor vs vana nahk"}
+```{r, fig.cap='Noor vs vana nahk'}
 knitr::include_graphics("http://images.slideplayer.com/24/6956017/slides/slide_7.jpg")
 ```
 
