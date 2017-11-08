@@ -1,80 +1,13 @@
 ---
-title       : Rakkude vananemine ja immortaliseerumine 
-subtitle    : Onkobioloogia
-author      : Taavi Päll
-job         : lektor, TTÜ
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+title: "Rakkude vananemine ja immortaliseerumine" 
+subtitle: "Onkobioloogia"
+author: "Taavi Päll"
+date: "2017-11-13"
+output: xaringan::moon_reader
 ---
 
-<!-- Limit image width and height -->
-<style type="text/css">
-img {     
-  max-height: 480px;     
-  max-width: 600px; 
-}
-</style>
-
-<style> .title-slide {
-  background-color: #FFFFFF; /*#CBE7A5 #EDE0CF; ; #CA9F9D*/
-}
-
-.title-slide hgroup > h1{
- font-family: 'Oswald', 'Helvetica', sanserif; 
-}
-
-.title-slide hgroup > h1, 
-.title-slide hgroup > h2 {
-  color: #535E43 ;  /* ; #EF5150*/
-}
-</style>
-
-<!-- Center image on slide -->
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-<script type="text/javascript">
-$(function() {     
-  $("p:has(img)").addClass('centered'); 
-});
-</script>
-
-<!-- Italic -->
-<style>
-em {
-  font-style: italic
-}
-
-<!-- Bold -->
-
-strong {
-  font-weight: bold;
-}
-
-<!-- Superscript -->
-sup {
-  top: -0.5em;
-  vertical-align: baseline;
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-}
-
-</style>
-
-<style>
-.title-slide {
-background-image:url(http://www.newsmax.com/Newsmax/files/5d/5dd1058d-4cde-4665-a136-69da850af0ac.jpg);
-background-repeat: no-repeat;
-background-position: 80% 8%;
-background-size: 50%;
-background-color: #CBE7A5; /* ; ; */
-}
-</style>
-
-```{r setup, echo=FALSE, cache = FALSE}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
 library(knitr)
 library(plyr)
 library(ggplot2)
@@ -82,54 +15,61 @@ library(ggthemes)
 library(boot)
 ```
 
-<footer class="source">Esilehe pilt: newsmax.com
-</footer>
-
-
---- .segue .dark .nobackground
-## Recap
 
 ---
+class: inverse, middle, center
+
+# Recap
+
+---
+
 ## p53 on muteerunud kuni pooltes kasvajates
 
+```{r, out.width=400}
+knitr::include_graphics("figures/prevalence-1.png")
+```
 
-<img src="assets/img/prevalence-1.png" style="width:400px">
-
-<footer class="source">Andmed: 
+.footer[Andmed: 
 IARC TP53 Database R17, November 2013. Petitjean A, Mathe E, Kato S, Ishioka C, Tavtigian SV, Hainaut P, Olivier M. Impact of mutant p53 functional properties on TP53 mutation patterns and tumor phenotype: lessons from recent developments in the IARC TP53 database.Hum Mutat. 2007 Jun;28(6):622-9.
-</footer>
+]
 
----&twocol
+---
 ## p53 kontrollib rakkude jagunemist ja apoptoosi
 
-***=left
+.pull-left[
 - Vastusena DNA kahjustustele või onkogeensele stressile p53 stabiliseeritakse ja indutseerub p53 märklaudgeenide ekspressioon, 
 - mille seas on rakutsükli inhibiitorid (**p21cip1**) ja proapoptootilised valgud (**BAX** BH3 only), 
 - surmaretseptor FAS, mis muudab rakud tundlikuks Fas ligandile FasL, 
 - sekreteeritav IGFBP-3, mis seob IGF-1 ja -2 surudes alla ellujäämist soodustavat signalisatsiooni.
 
-***=right
-![p53](http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg)
+]
+.pull-right[
+```{r, fig.cap="p53"}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n1/images/nrc1780-f4.jpg")
+```
+]
 
 
-
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.nature.com/nrc/journal/v6/n1/fig_tab/nrc1780_F4.html">
 p21 and DNA damage signalling.
 </a>
-</footer>
+]
 
---- .segue .dark .nobackground
+---
+class: inverse, middle, center
 ## Senesents ja immortalisatsioon
 
 ---
 ## Rakkude jagunemispotensiaal koekultuuris on piiratud 
 
-![](http://www.nature.com/nrm/journal/v1/n1/images/nrm1000_072a_f3.gif)
+```{r, fig.cap=""}
+knitr::include_graphics("http://www.nature.com/nrm/journal/v1/n1/images/nrm1000_072a_f3.gif")
+```
 
-<footer class="source">Pilt: Hayflick limit. Phase I is the primary culture; phase II represents subcultivated cells during the period of exponential replication. Phase III represents the period when cell replication ceases but metabolism continues. Cells may remain in this state for at least one year before death occurs.
+.footer[Pilt: Hayflick limit. Phase I is the primary culture; phase II represents subcultivated cells during the period of exponential replication. Phase III represents the period when cell replication ceases but metabolism continues. Cells may remain in this state for at least one year before death occurs.
 
-</footer>
+]
 
 ---
 
@@ -140,24 +80,30 @@ p21 and DNA damage signalling.
 - Senesentsed rakud jäävad metaboolselt aktiivseks kuid nõivad olevat kaotanud jäädavalt võime siseneda aktiivselt rakutsükklisse.
 - Kasvufaktorite olemasolul võivad sellised sellised senesentsed rakud püsida koekultuuris elus pikalt.
 
-![a-b-Gal](http://content.presspage.com/uploads/1369/senescence.jpg)
+```{r, fig.cap="a-b-Gal"}
+knitr::include_graphics("http://content.presspage.com/uploads/1369/senescence.jpg")
+```
 
-<footer class="source">Pilt: http://www.manchester.ac.uk/discover/news/new-method-to-detect-ageing-cells--and-aid-rejuvenation-therapies---developed-by-researchers
-</footer>
+.footer[Pilt: http://www.manchester.ac.uk/discover/news/new-method-to-detect-ageing-cells--and-aid-rejuvenation-therapies---developed-by-researchers
+]
 
 ---
 ## Rakkude jagunemispotentsiaal langeb vanusega
 
 Vananedes rakkude jagunemispotentsiaal väheneb. Naha keratinotsüütide puhul väljendub see keratinotsüütide kihi õhenemises ja selle koe lainelise arhitektuuri kadumises.
 
-![noor vs vana nahk](http://images.slideplayer.com/24/6956017/slides/slide_7.jpg)
+```{r, fig.cap="noor vs vana nahk"}
+knitr::include_graphics("http://images.slideplayer.com/24/6956017/slides/slide_7.jpg")
+```
 
 ---
 ## Vähirakkude jagunemine ja tuumori suurus
 
 Lähtudes eksponentsiaalse kasvu kineetikast, eraldab algset vähirakku lõpp-staadiumi kasvajast umbes 40 rakugeneratsiooni
 
-![Mathematical representation of the theoretical growth (size) of breast cancer plotted against time in years based on a constant cellular doubling time of 100 days. (Wertheimer MD, Costanza ME, Dodson TF et al: Increasing the effort toward breast cancer detection. JAMA 255: 1311 –1315, 1986](https://www.glowm.com/resources/glowm/cd/graphics/figures/v1/0260/003f.jpg)
+```{r, fig.cap="Mathematical representation of the theoretical growth (size) of breast cancer plotted against time in years based on a constant cellular doubling time of 100 days. (Wertheimer MD, Costanza ME, Dodson TF et al: Increasing the effort toward breast cancer detection. JAMA 255: 1311 –1315, 1986"}
+knitr::include_graphics("https://www.glowm.com/resources/glowm/cd/graphics/figures/v1/0260/003f.jpg")
+```
 
 ---
 
@@ -165,7 +111,9 @@ Lähtudes eksponentsiaalse kasvu kineetikast, eraldab algset vähirakku lõpp-st
 - Seega on vaja suure kasvaja tekkeks oluliselt rohkem jagunemisi kui maksimaalsed 50-60.
 - 50 kuni 60 jagunemisega saaks eksponentsiaalse kasvu korral vähimassi, milles oleks $10^{18}$ rakku $\cong$ $10^9$ $cm^3$ $\cong$ $10^6$ kg.
 
-![](https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg)
+```{r, fig.cap=""}
+knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg")
+```
 
 ---
 ## Stress ja kriis
@@ -178,41 +126,52 @@ Lähtudes eksponentsiaalse kasvu kineetikast, eraldab algset vähirakku lõpp-st
 ---
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
 
-![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
+```{r, fig.cap="stress"}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg")
+```
 
----&twocol
+---
 ## Koekultuuri stress indutseerib senesentsi
 
-***=left
+.pull-left[
 
 Oksütatiivse stressi tingimustes (20% $O_2$) kasvatatud rakud läbivad vähem pooldumisi.
 
-![stress](assets/img/Chen1995pnas.png)
+```{r, fig.cap="stress"}
+knitr::include_graphics("figures/Chen1995pnas.png")
+```
 
-***=right
+]
+
+.pull-right[
 
 Normaalsed epiteelirakud sõltuvad stroomarakkude toetusest. Kui inimese eesnaha keratinotsüüte kasvatada puhta kultuurina ilma feederrakkudeta indutseerub neis kiirelt rakutsükli blokk läbi p16ink4a ekspressiooni.
 
-<img src="assets/img/plastic.jpg" style="width:300px">
+```{r, out.width=300}
+knitr::include_graphics("figures/plastic.jpg")
+```
+]
 
-<footer class="source">Pildid: 
+.footer[Pildid: 
 <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC41939/?page=1">
 Chen et al., 1995
 </a>, 
 <a href="http://cancerres.aacrjournals.org/content/63/22/7815.long">
 Fu et al., 2003
 </a>.
-</footer> 
+] 
 
 ---
 ## Tsükliinkinaasi inhibiitorite induktsioon
 
 
-![p21 ja p16 induktsioon jagunevates inimese endomeetriumi fibroblastides](http://ars.els-cdn.com/content/image/1-s2.0-S0014482704002551-gr5.jpg)
+```{r, fig.cap="p21 ja p16 induktsioon jagunevates inimese endomeetriumi fibroblastides"}
+knitr::include_graphics("http://ars.els-cdn.com/content/image/1-s2.0-S0014482704002551-gr5.jpg")
+```
 
 
-<footer class="source">Kinetics of p16INK4a and p21CIP1 accumulation in different strains of human fibroblasts. Total cell lysates were prepared at different population doublings throughout the life span of each cell strain and equivalent samples (20 μg protein) were analyzed by immunoblotting for p16INK4a, p21CIP1 and Cdk4 as indicated. Numbers above the lanes indicate the population doubling of each sample and how this relates to the projected life span. (A) ESC cells. (B) IDF cells. (C) Q34 cells. (D) Comparison of the total levels of p16INK4a and other relevant proteins in different fibroblast strains at approximately 50% of their projected life spans; 20-μg samples of protein in each case. Experimental Cell Research Volume 298, Issue 2, 15 August 2004, Pages 549–559
-</footer>
+.footer[Kinetics of p16INK4a and p21CIP1 accumulation in different strains of human fibroblasts. Total cell lysates were prepared at different population doublings throughout the life span of each cell strain and equivalent samples (20 μg protein) were analyzed by immunoblotting for p16INK4a, p21CIP1 and Cdk4 as indicated. Numbers above the lanes indicate the population doubling of each sample and how this relates to the projected life span. (A) ESC cells. (B) IDF cells. (C) Q34 cells. (D) Comparison of the total levels of p16INK4a and other relevant proteins in different fibroblast strains at approximately 50% of their projected life spans; 20-μg samples of protein in each case. Experimental Cell Research Volume 298, Issue 2, 15 August 2004, Pages 549–559
+]
 
 ---
 ## Onkogeenne Ras vajab transformeerimiseks lisajõude
@@ -222,24 +181,28 @@ Fu et al., 2003
 - Selline **immortaliseerumine saavutatakse** ka siis kui viia rakku koos ras-iga sisse ka mõni teine lisa onkogeen, näiteks v-myc või c-myc, või SV40 suur-T antigeen.
 - Normaalsetel inimese rakkudel on koekultuuris piiratud eluiga (näiteks HUVEC rakke kasutatakse kuni 8 passeerimiseni) ja neil ei teki spontaanset immortaliseerumist (erinevalt hiire-roti rakkudest).
 
----&twocol 
+---
 ## p53 blokeerib Ras transformatsiooni
 
-***=left
+.pull-left[
 
 - Normaalsete inimese või hiire ja roti fibroblastide transformeerimisel H-RasV12-ga blokeerub nende rakkude jagunemine palju varem kui nad saavutavad konfluentsuse. 
 - See jagunemise blokk on pöördumatu (**senesents**) ja sellega kaasneb p53 ja p21Cip1 ning p16INK4a valkude akumulatsioon.
 - Rakkude minemist senesentsi on võimalik vältida kui p53 neutraliseerida, näiteks adenoviiruse E1A valgu transfekteerimisel.
 
-***=right
+]
+.pull-right[
 
-<img src="assets/img/Serrano1997.png" style="width:460px">
+```{r, out.width=460}
+knitr::include_graphics("figures/Serrano1997.png")
+```
+]
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.sciencedirect.com/science/article/pii/S0092867400819029#">
 Serrano, 1997
 </a>
-</footer>
+]
 
 ---
 ## Onkogeen indutseeritud senesents
@@ -253,33 +216,38 @@ Serrano, 1997
 ---
 # Premalignant lung adenomas induced by oncogenic K-ras are positive for markers of senescence, whereas malignant adenocarcinomas are negative.
 
-![](http://www.nature.com/nature/journal/v436/n7051/images/436642a-f1.2.jpg)
+```{r, fig.cap=""}
+knitr::include_graphics("http://www.nature.com/nature/journal/v436/n7051/images/436642a-f1.2.jpg")
+```
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.nature.com/nature/journal/v436/n7051/fig_tab/436642a_F1.html">
 Collado et al., 2004
 </a>.
-</footer>
+]
 
----&twocol
+---
 ## OIS on põhjustatud DNA kahjustustest
 
-***=left
+.pull-left[
 
 - Onkogeenide poolt indutseeritud stress on põhjustatud ka DNA kahjustuste poolt mis on tekkinud kas
     - hapnikuradikaalidest (ROS) ([Lee et al., 1999](http://www.nature.com/onc/journal/v27/n20/full/1210950a.html#bib29))või
     - ülemäärasest replikatsioonist ([Bartkova et al., 2006](http://www.nature.com/onc/journal/v27/n20/full/1210950a.html#bib2)).
 - Senesentsi pöördumatuse tingivad ulatuslikud kromatiinimodifikatsioonid (metülatsioon) mis väljenduvad heterokromatiinsete fookuste (*senescence-associated heterochromatic foci*) näol.
 
-***=right
+]
+
+.pull-right[
 
 <img src="http://images.the-scientist.com/content/figures/0890-3670-050328-14-1-1.jpg" style="width:300px" >
 
 # HP1-beta ja PML valkude akumuleerumine kromatiinile initseerib DNA kahjustuste parandamise mehhanismid
+]
 
-<footer class="source">
+.footer[
 Pilt: the-scientist.com
-</footer>
+]
 
 ---
 ## *In vivo* ja *in vitro* senesentsi markerid
@@ -298,24 +266,28 @@ DCR2 | WB, IHC
 
 <p style="font-size:12pt">WB, western blot. IHC, immunohistochemistry. IF, immunofluorescence. SAHFs, senescence-associated heterochromatic foci. DEC1, differentiated embryo-chondrocyte expressed. DCR2, decoy death receptor 2.</p>
 
---- &twocol
+---
 ## BRAF mutatsioonid lükkavad sünnimärgi melanotsüüdid senesentsi
 
-***=left
+.pull-left[
 
-<img src="http://www.nature.com/nature/journal/v436/n7051/images/nature03890-f3.2.jpg" style="width:480px">
+```{r, out.width=480}
+knitr::include_graphics("http://www.nature.com/nature/journal/v436/n7051/images/nature03890-f3.2.jpg")
+```
 
-***=right
+]
+.pull-right[
 
 - Sünnimärgid (*naevi*) sisaldavad sageli onkogeenseid BRAF V600E mutatsioone.
 - Sellised sünnimärgid jäävad siiski kümneteks aastateks vaikeolekusse ja ainult harva arenevad melanoomiks.
 - Pidev BRAFV600E ekspressioon inimese melanotsüütides indutseerib rakutsükli bloki, mida iseloomustab p16INK4a ja happelise $\beta$-galaktosidaasi ekspressioon (SA-$\beta$-Gal).
+]
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.nature.com/nature/journal/v436/n7051/full/nature03890.html">
 BRAFE600-associated senescence-like cell cycle arrest of human naevi.
 </a>
-</footer>
+]
 
 ---
 Geenid mis indutseerivad senesentsi
@@ -344,10 +316,10 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 - Imetajate telomeerid koosnevad 5-15 kb pikkustest **TTAGGG** kordusjärjestustest, mis lõppevad 3' üheahelalise *overhang*-iga.
 - Telomeeride pikkuse säilitamise eest vastutab **telomeeraas** või *alternative telomere length* (ALT) korrastus-mehhanism, mis põhineb rekombinatsioonil (>10% vähirakkudel).
 
---- &twocol
+---
 ## Kromosoomid millel puuduvad õiged otsad on ebastabiilsed
 
-***=left
+.pull-left[
 
  
 - 1930.ndatel täheldasid Hermann Müller ja Barbara McClintock erinevust katkenud kromosoomide käitumise ja telomeeride vahel.
@@ -355,12 +327,14 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 - McClintock leidis, et katkenud otsad fuseeruvad kuid mitte kromosoomid. 
 
 
-***=right
+]
+.pull-right[
 
 <img src="http://profiles.nlm.nih.gov/ps/access/LLBBPP_.jpg" style="width:400px" >
+]
 
-<footer class="source">Pilt: Smithsonian Institution
-</footer> 
+.footer[Pilt: Smithsonian Institution
+] 
 
 ---
 ## Telomeeride tähtsus - fusion-bridge-breakage
@@ -377,43 +351,51 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 
 <iframe width="640" height="390" src="http://www.youtube.com/embed/VuzeD_VyBO4" frameborder="0" allowfullscreen></iframe>
 
----&twocol
+---
 ## Telomeeride pikkus määrab rakkude replikatiivse potentsiaali
 
-***=left
+.pull-left[
 
-![](assets/img/TRF-vs-age.png)
+```{r, fig.cap=""}
+knitr::include_graphics("figures/TRF-vs-age.png")
+```
 
-***=right
+]
+.pull-right[
 
-<img src="assets/img/MPD-vs-TRFlength.png" style="width:300px" >
+<img src="figures/MPD-vs-TRFlength.png" style="width:300px" >
+]
 
-<footer class="source">Pildid: 
+.footer[Pildid: 
 <a href="http://www.pnas.org/content/89/21/10114.full.pdf">
 Allsopp et al., 1992.
 </a>
-</footer> 
+] 
 
---- &twocol
+---
 # Telomeeride lühenemine lõppeb kriisiga ja võib põhjustada immortalisatsiooni
 
 - SV40 large-T transformeeritud inimese neeru fibroblastid (HEK) jagunevad kuni telomeeride lühenemiseni ~1.5 kb pikkusteks.
 - Lühenenud telomeerid põhjustavad rakkudes nö. kriisi, millest vähesed ellujäävad kloonid väljuvad immortaliseerununa.
 - Immortaliseerunud rakud ekspresseerivad telomeraasi.
 
-***=left
+.pull-left[
 
-<img src="http://www.ncbi.nlm.nih.gov/corecgi/tileshop/tileshop.fcgi?p=PMC3&id=426330&s=6&r=1&c=1" style="width:400px">
+```{r, out.width=400}
+knitr::include_graphics("http://www.ncbi.nlm.nih.gov/corecgi/tileshop/tileshop.fcgi?p=PMC3&id=426330&s=6&r=1&c=1")
+```
 
-***=right
+]
+.pull-right[
 
-<img src="assets/img/crisis.png" style="width:200px" >
+<img src="figures/crisis.png" style="width:200px" >
+]
 
-<footer class="source">Pildid: 
+.footer[Pildid: 
 <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC556651/?page=1">
 Counter et al., 1992.
 </a>
-</footer> 
+] 
 
 ---
 ## Telomeeride lühenemine ehk "*end replication problem*"
@@ -435,25 +417,29 @@ Telomeerid lühenevad iga raku jagunemisega S-faasis
 - Tüvirakkudes on telomeraasi aktiivsus madalam kui vähirakkudes ja paljudes normaalsetes jagunevates rakkudes puudub telomeraasi ekspressioon täielikult.
 - Siit võib järeldada, et **telomeeride regeneratsioon on vähis hädavajalik vähirakkude jagunemispotentsiaali säilitamiseks**.
 
---- &twocol
+---
 ## Inhibition of telomerase limits the growth of human cancer cells
 
-***=left
+.pull-left[
 
-<img src="http://www.nature.com/nm/journal/v5/n10/images/nm1099_1167a.gif" style="width:460px">
+```{r, out.width=460}
+knitr::include_graphics("http://www.nature.com/nm/journal/v5/n10/images/nm1099_1167a.gif")
+```
 
-***=right
+]
+.pull-right[
 
 Effects of DN-hTERT on cell proliferation.
 Clonal isolates analyzed are from cell lines LoVo a, HA-1 b, SW613 c, 36M d and GM847 cells e; in order of initial telomere length from shortest (LoVo) to longest (GM847). For each cell line, two clones are shown expressing the control retrovirus ($\square$, $\blacksquare$), WT-hTERT ($\circ$, $\bullet$) or DN-hTERT ($\triangle$, $\blacktriangle$).
+]
 
-<footer class="source">Ref.: 
+.footer[Ref.: 
 <a href="http://www.nature.com/nm/journal/v5/n10/full/nm1099_1164.html">
 Hahn et al., 1999.
 </a>
-</footer> 
+] 
 
----&twocol
+---
 # Telomeraas ja ALT
 
 Telomeraasi holoensüüm koosneb kahest konserveerunud komponendist: 
@@ -462,39 +448,46 @@ Telomeraasi holoensüüm koosneb kahest konserveerunud komponendist:
 - Lisaks on kompleksis ka **dyskerin**, mis stabiliseerib telomeraasi holoensüümi.
 - Mutatsioonid TERT, TR või DKC1 geenides põhjustavad inimesel telomeerseid sündroome.
 
-***=right
+]
+.pull-right[
 
-<img src="http://www.nature.com/nrg/journal/v13/n10/images/nrg3246-f1.jpg" style="width:400px">
+```{r, out.width=400}
+knitr::include_graphics("http://www.nature.com/nrg/journal/v13/n10/images/nrg3246-f1.jpg")
+```
+]
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.nature.com/nrg/journal/v13/n10/full/nrg3246.html">
 Armanios & Blackburn, 2012.
 </a>
-</footer> 
+] 
 
----&twocol
+---
 ## Telomeeride regeneerimise ALT mehhanism
 
-***=left
+.pull-left[
 
 - **Homoloogne rekombinantsioon** kus uus telomeerne DNA sünteesitakse rekombinatsiooni ajal kõrval oleva kromosoomi pealt.
 - **Õdekromatiidide telomeeride ebavõrdne vahetus** (*unequal telomere sister chromatid exchanges (T-SCEs)*). Tingituna telemoeersetest kordusjärjestustest saab üks õdekromatiid rekombinatsioonis teiselt kromatiidilt rohkem materjali kui 'vastu annab'. Tekkinud tütarrakkudest ühes on telomeerid pikenenud, teises lühenenud.
 
-***=right
+]
+.pull-right[
 
-![alt](http://www.nature.com/nrg/journal/v11/n5/images/nrg2763-f2.jpg)
+```{r, fig.cap="alt"}
+knitr::include_graphics("http://www.nature.com/nrg/journal/v11/n5/images/nrg2763-f2.jpg")
+```
+]
 
-
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.nature.com/nrg/journal/v11/n5/full/nrg2763.html">
 Cesare & Reddel, 2010.
 </a>
-</footer> 
+] 
 
---- &twocol
+---
 ## Telomeraasi üle-ekpressioon vähis
 
-***=left
+.pull-left[
 ```{r telomeraas, echo=FALSE, fig.show='asis'}
 shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                       Pathology=c("Normal oral mucosa",
@@ -646,7 +639,8 @@ ggplot(shay) +
         legend.justification = c(1.5, 0.5))
 ```
 
-***=right
+]
+.pull-right[
 
 Telomeraas positiivsed kasvajad (%, keskmine ja 95% usalduspiirid.) 
 ```{r keskmine, echo=FALSE, results='markup' }
@@ -655,38 +649,45 @@ out <- ddply(shay,"State", summarise, Mean=round(mean(Percent),digits=1),
       Upper = round(boot.ci(boot(Percent, function(u,i) mean(u[i]), R = 999), type = "perc")$percent[5],digits=1))
 kable(out)
 ```
+]
 
 
-
-<footer class="source">Andmed: 
+.footer[Andmed: 
 <a href="http://www4.utsouthwestern.edu/cellbio/shay-wright/publications/Bachetti.EJC.97.pdf">
 Shay, J. W. & Bacchetti, S. A survey of telomerase activity in human cancer. Eur. J. Cancer 33, 787–791 (1997).
-</a></footer>
+</a>]
 
----&twocol
+---
 ## Telomeeride otsas on sõlm
 
-***=left
+.pull-left[
 
-<img src="http://ars.els-cdn.com/content/image/1-s2.0-S0092867400807606-gr3.jpg" style="width:360px">
+```{r, out.width=360}
+knitr::include_graphics("http://ars.els-cdn.com/content/image/1-s2.0-S0092867400807606-gr3.jpg")
+```
 
-***=right
+]
+
+.pull-right[
 
 - Telomeersele DNA-le seostub valgukompleks nimega **shelterin**.
 - Inimese shelterin kompleks koosneb kuuest valgust: *telomere repeat binding factor 1* (TRF1), TRF2, *repressor/activator protein 1* (RAP1), *TRF1-interacting nuclear protein 2* (TIN2), *TIN2-interacting protein 1* (TPP1) ja *protection of telomeres 1* (POT1).
 - Telomeerne DNA moodustab suure lingu **t loop**-i, mille 3' *overhang* ots paardub telomeeri kordusjärjestuste paarisahelalise osaga. 
 - TRF2 indutseerib *t loop* struktuuri moodustamise *in vitro* ja ka tema *in vivo* funktsioon vastab t loop-ide .
+]
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.sciencemag.org/content/283/5406/1321.full">
 Karlseder, 1999
 </a>
-</footer>
+]
 
 ---
 ## T-loop
 
-![tloop](assets/img/tloop.jpg)
+```{r, fig.cap="tloop"}
+knitr::include_graphics("figures/tloop.jpg")
+```
 
 ---
 ## TRF valgud
@@ -697,7 +698,9 @@ Karlseder, 1999
 - TRF2 vastutab selle eest, et telomeerid oleksid vinks-vonks korras.
 - TRF2 inhibitsioon põhjustab 3' *overhang*-i kadumise telomeeri otsast ja viib kromosoomi otste fuseerumiseni.
 
-<img src="assets/img/trf1.png" style="width:200px">
+```{r, out.width=200}
+knitr::include_graphics("figures/trf1.png")
+```
 
 ---
 ## TRF2 kaitseb inimese telomeere otsipidi kokku fuseerumast
@@ -706,14 +709,16 @@ Muteerunud DNA sidumise domääniga TRF2 (TRF2ΔBΔM) ekspressioon rakkudes viib
 
 Anafaasi rakud, milles on TRF2ΔBΔM-indutseeritud anafaasi sillad ja lohisev kromosoom (vasakpoolne rakk). DNA on värvitud DAPI-ga.
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.sciencedirect.com/science/article/pii/S0092867400809320">
 van Steensel, 1998
 </a>
-</footer>
+]
 
 
-![trf2-end-to-end-fusions](assets/img/TRF2dBdM.jpg)
+```{r, fig.cap="trf2-end-to-end-fusions"}
+knitr::include_graphics("figures/TRF2dBdM.jpg")
+```
 
 ---
 ## Telomeeride avanemine ja lühenemine indutseerib apoptoosi
@@ -722,84 +727,101 @@ van Steensel, 1998
 - TRF2 inhibitsioon põhjustab kiire ATM/p53–sõltuva DNA kahjustuse kontrollpunkti aktivatsiooni, rakutsükli arresti ja suunab rakud apoptoosi.
 - Katmata kromosoomi otsad mis tekivad TRF2 funktsiooni inhibeerimisel seostuvad DNA kahjustuste kontrolli valkudega 53BP1, $\gamma$-H2AX, Rad17, ATM ja Mre11.
 
-<img src="assets/img/TRF2p53apoptosis.jpg" style="width:400px">
+```{r, out.width=400}
+knitr::include_graphics("figures/TRF2p53apoptosis.jpg")
+```
 
----&twocol
+---
 ## Hiirte telomeerid
 
-***=left
+.pull-left[
 
 - Hiirtel on kolm korda pikemad telomeerid kui inimestel, samas on nende eluiga lühike.
 - TR knockout-hiired ei ole resistentsed tumorigeneesile.
 - mTR null hiirel lühenevad telomeerid 4–5 kb generatsiooni kohta.
 - Võrreldes esimese generatsiooni loomadega oli kolmanda (G3) ja kuuenda (G6) generatsiooni hiirtel probleeme haavade paranemisega, hematopoeesiga, neil oli suurem kasvajate intsidents ja lühem eluiga.
 
-***=right
+]
+
+.pull-right[
 Increased Incidence of Skin Lesions, Alopecia, and Hair Graying in Aging mTR−/− Mice
-<img src="http://ars.els-cdn.com/content/image/1-s2.0-S0092867400805802-gr1.jpg" style="width:360px">
+```{r, out.width=360}
+knitr::include_graphics("http://ars.els-cdn.com/content/image/1-s2.0-S0092867400805802-gr1.jpg")
+```
+]
 
-<footer class="source"> Pilt: 
+.footer[ Pilt: 
 <a href="http://www.sciencedirect.com/science/article/pii/S0092867400805802">Rudolph, 1999</a>
-</footer>
+]
 
----&twocol
+---
 # Telomere dysfunction promotes non-reciprocal translocations and epithelial cancers in mice
 
-***=right
+.pull-left[
+
+```{r, out.width=360}
+knitr::include_graphics("http://www.nature.com/nature/journal/v406/n6796/images/406641aa.2.jpg")
+```
+]
+
+.pull-right[
 
 Kaplan–Meier analysis of tumour incidence in p53 mutant mice divided on the basis of generation of telomerase deficiency.
 
 Telomere attrition in ageing telomerase-deficient p53 mutant mice promotes the development of epithelial cancers by a process of fusion-bridge breakage that leads to the formation of complex non-reciprocal translocations—a classical cytogenetic feature of human carcinomas.
+]
 
-***=left
-
-<img src="http://www.nature.com/nature/journal/v406/n6796/images/406641aa.2.jpg" style="width:360px">
-
-<footer class="source"> Pilt: 
+.footer[ Pilt: 
 <a href="http://www.nature.com/nature/journal/v406/n6796/full/406641a0.html">
 Artandi et al., 2000.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Põletiku ja vähi seos: lühenenud telomeerid
 
 Põletikuline soolehaigus (*ulcerative colitis*) on seotud kõrge kolorektaalvähi riskiga ja seda tingituna genoomsest edastabiilsusest.
 - Telomeeride pikkus korreleerub kromosomaalse ebastabiilsusega selles vähieelses seisundis.
 - Soolehaigete patsientide käärsoole epiteelis kellel on vähikolded juba välja arenenud esinevad anafaasi sillad (BFB tunnus) ja muud kromosoomi aberratsioonid.
 
-***=right
-
-<img src="http://www.nature.com/ng/journal/v32/n2/images/ng989-F4.gif" style="width:250px">
-
-***=left
+.pull-left[
 
 <p style="font-size:10pt"> 
 Higher frequency of anaphase bridges in UC progressors.
 <b>a</b>, Representative images of anaphase bridges in the colon. <b>b</b>, Occurrence of anaphase bridges in non-UC controls, UC non-progressors and UC progressors, expressed as a percentage of the total cell number. Bars indicate group means plusminus s.e.m.
 </p>
+]
 
-<footer class="source">Ref:
+.pull-right[
+```{r, out.width=250}
+knitr::include_graphics("http://www.nature.com/ng/journal/v32/n2/images/ng989-F4.gif")
+```
+]
+
+.footer[Ref:
 <a href="http://www.nature.com/ng/journal/v32/n2/full/ng989.html">
 O'Sullivan et al., 2002.
 </a>
-</footer>
+]
 
 ---
 ## Telomeerid vähi arengus
 
-![](http://www.med.nyu.edu/skirball-lab/sfeirlab/Research_files/shapeimage_4.png)
+```{r, fig.cap=""}
+knitr::include_graphics("http://www.med.nyu.edu/skirball-lab/sfeirlab/Research_files/shapeimage_4.png")
+```
 
-<footer class="source">Pilt: Skirball Institute of Biomolecular Medicine.
-</footer>
+.footer[Pilt: Skirball Institute of Biomolecular Medicine.
+]
 
---- .segue .dark .nobackground
+---
+class: inverse, middle, center
 
 ## Lingid teistele loengutele
 
---- &twocol 
-
-***=left 
+---
+class: inverse, middle
+.pull-left[ 
 
 - [Sissejuhatav loeng](http://tpall.github.io/onkobioloogia)
 - [Viirused ja onkogeenid](http://tpall.github.io/viirused-ja-onkogeenid)
@@ -808,7 +830,8 @@ O'Sullivan et al., 2002.
 - [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
 - [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
 
-***=right 
+]
+.pull-right[ 
 
 - [p53 ja apoptoos](http://tpall.github.io/p53-ja-apoptoos)
 - [Immortalisatsioon](http://tpall.github.io/Immortalisatsioon)
@@ -818,3 +841,4 @@ O'Sullivan et al., 2002.
 - [Metastaasid](http://tpall.github.io/Metastaas)
 - [Immuunsus](http://tpall.github.io/Immuunsus)
 - [Vähiravimid](http://tpall.github.io/Vahiravim)
+]
