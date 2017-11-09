@@ -8,9 +8,6 @@ output: xaringan::moon_reader
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = 'center', out.width = '50%')
-library(knitr)
-library(plyr)
-library(ggplot2)
 library(ggthemes)
 library(boot)
 ```
@@ -105,6 +102,7 @@ knitr::include_graphics("https://www.glowm.com/resources/glowm/cd/graphics/figur
 ```
 
 ---
+class: middle
 
 - Reaalsuses on vähirakkude jagunemine suures osas mitteproduktiivne ja igas generatsioonis läheb suur osa rakke apoptoosi.
 - Seega on vaja suure kasvaja tekkeks oluliselt rohkem jagunemisi kui maksimaalsed 50-60.
@@ -117,15 +115,18 @@ knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s540
 ---
 ## Stress ja kriis
 
-- Inimese kehas olevatel rakkudel on limiteeritud jagunemiste arv.
-- Kui suure vähi tekkeks on rakukloonil vaja läbida 100 jagunemist, siis kasutaks tekkinud pahaloomuline rakk oma jagunemispotentsiaali ära ammu enne kui ta ohtlikuks muutuks.
+- Inimese kehas olevatel rakkudel on limiteeritud jagunemiste arv
+
+- Kui suure vähi tekkeks on rakukloonil vaja läbida 100 jagunemist, siis kasutaks tekkinud pahaloomuline rakk oma jagunemispotentsiaali ära ammu enne kui ta ohtlikuks muutuks
+
 - Kuidas üldse rakk kontrollib oma jagunemiste arvu, see peab toimuma igas rakus autonoomselt?
+
 - Kaks regulatoorset mehhanismi, mis kontrollivad rakkude jagunemispotentsiaali: kumulatiivne **stress** ja **kriis**, kui kogu jagunemiste arv on ära kasutatud.
 
 ---
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
 
-```{r, fig.cap="stress"}
+```{r}
 knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg")
 ```
 
@@ -136,7 +137,7 @@ knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-
 
 Oksütatiivse stressi tingimustes (20% $O_2$) kasvatatud rakud läbivad vähem pooldumisi.
 
-```{r, fig.cap="stress"}
+```{r}
 knitr::include_graphics("figures/Chen1995pnas.png")
 ```
 
@@ -163,36 +164,39 @@ Fu et al., 2003
 ---
 ## Tsükliinkinaasi inhibiitorite induktsioon
 
-
-```{r, fig.cap="p21 ja p16 induktsioon jagunevates inimese endomeetriumi fibroblastides"}
+.pull-left[
+```{r, fig.cap="Kinetics of p16INK4a and p21CIP1 accumulation in different strains of human fibroblasts.", out.width='80%'}
 knitr::include_graphics("http://ars.els-cdn.com/content/image/1-s2.0-S0014482704002551-gr5.jpg")
 ```
+]
 
-
-.footer[Kinetics of p16INK4a and p21CIP1 accumulation in different strains of human fibroblasts. Total cell lysates were prepared at different population doublings throughout the life span of each cell strain and equivalent samples (20 μg protein) were analyzed by immunoblotting for p16INK4a, p21CIP1 and Cdk4 as indicated. Numbers above the lanes indicate the population doubling of each sample and how this relates to the projected life span. (A) ESC cells. (B) IDF cells. (C) Q34 cells. (D) Comparison of the total levels of p16INK4a and other relevant proteins in different fibroblast strains at approximately 50% of their projected life spans; 20-μg samples of protein in each case. Experimental Cell Research Volume 298, Issue 2, 15 August 2004, Pages 549–559
+.pull-right[Total cell lysates were prepared at different population doublings throughout the life span of each cell strain and equivalent samples were analyzed by immunoblotting for p16INK4a, p21CIP1 and Cdk4 as indicated. Numbers above the lanes indicate the population doubling of each sample and how this relates to the projected life span. (A) ESC cells. (B) IDF cells. (C) Q34 cells. (D) Comparison of the total levels of p16INK4a and other relevant proteins in different fibroblast strains at approximately 50% of their projected life spans; 20-μg samples of protein in each case. Experimental Cell Research Volume 298, Issue 2, 15 August 2004, Pages 549–559
 ]
 
 ---
 ## Onkogeenne Ras vajab transformeerimiseks lisajõude
 
-- Onkogeenselt aktiveeritud Ras valgud on võimelised transformeerima immortaliseeritud hiire rakke  ([Der et al., 1982](http://dx.doi.org/10.1073/pnas.79.11.3637); [Parada et al., 1982](http://www.nature.com/doifinder/10.1038/297474a0)). 
-- Kuid hiire embrüonaalsete fibroblastide transfekteerimine inimese ras onkogeeniga ei muuda neid tumorigeenseteks enne kui need rakud on koekultuuri adapteeritud ja immortaliseerunud.
-- Selline **immortaliseerumine saavutatakse** ka siis kui viia rakku koos ras-iga sisse ka mõni teine lisa onkogeen, näiteks v-myc või c-myc, või SV40 suur-T antigeen.
-- Normaalsetel inimese rakkudel on koekultuuris piiratud eluiga (näiteks HUVEC rakke kasutatakse kuni 8 passeerimiseni) ja neil ei teki spontaanset immortaliseerumist (erinevalt hiire-roti rakkudest).
+- Onkogeenselt aktiveeritud Ras valgud on võimelised transformeerima immortaliseeritud hiire rakke  ([Der et al., 1982](http://dx.doi.org/10.1073/pnas.79.11.3637); [Parada et al., 1982](http://www.nature.com/doifinder/10.1038/297474a0))
+
+- Kuid hiire embrüonaalsete fibroblastide transfekteerimine inimese ras onkogeeniga ei muuda neid tumorigeenseteks enne kui need rakud on koekultuuri adapteeritud ja immortaliseerunud
+
+- Selline **immortaliseerumine saavutatakse** ka siis kui viia rakku koos ras-iga sisse ka mõni teine lisa onkogeen, näiteks v-myc või c-myc, või SV40 suur-T antigeen
+
+- Normaalsetel inimese rakkudel on koekultuuris piiratud eluiga (näiteks HUVEC rakke kasutatakse kuni 8 passeerimiseni) ja neil ei teki spontaanset immortaliseerumist (erinevalt hiire-roti rakkudest)
 
 ---
 ## p53 blokeerib Ras transformatsiooni
 
 .pull-left[
 
-- Normaalsete inimese või hiire ja roti fibroblastide transformeerimisel H-RasV12-ga blokeerub nende rakkude jagunemine palju varem kui nad saavutavad konfluentsuse. 
-- See jagunemise blokk on pöördumatu (**senesents**) ja sellega kaasneb p53 ja p21Cip1 ning p16INK4a valkude akumulatsioon.
-- Rakkude minemist senesentsi on võimalik vältida kui p53 neutraliseerida, näiteks adenoviiruse E1A valgu transfekteerimisel.
+- Normaalsete inimese või hiire ja roti fibroblastide transformeerimisel H-RasV12-ga blokeerub nende rakkude jagunemine palju varem kui nad saavutavad konfluentsuse
+- See jagunemise blokk on pöördumatu (**senesents**) ja sellega kaasneb p53 ja p21Cip1 ning p16INK4a valkude akumulatsioon
+- Rakkude minemist senesentsi on võimalik vältida kui p53 neutraliseerida, näiteks adenoviiruse E1A valgu transfekteerimisel
 
 ]
 .pull-right[
 
-```{r, out.width=460}
+```{r, out.width='100%'}
 knitr::include_graphics("figures/Serrano1997.png")
 ```
 ]
@@ -204,25 +208,27 @@ Serrano, 1997
 ]
 
 ---
-## Onkogeen indutseeritud senesents
+## Onkogeen indutseeritud senesents (OIS)
 
-- **OI senesents on tuumorsuppressor mehhanism** mis toimib healoomulised kasvajates ([onkogeensete radade aktivatsioon normaalsetes rakkudes põhjustas kiire jagunemise bloki](#7)).
-- Pahaloomulistes kasvajates on OI mehhanismid juba tasalülitatud (mutatsioonid p53-s ja RB-s, telomeraas).
-- Mutatsioonid K-ras, B-raf, PTEN ja NF1 geenis käivitavad rakkudel senesentsi ka *in vivo*.
-- *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumor-suppressor mehhanismina.
-- Onkogeenide põhjustatud senesents on aktiivne protsess ning pole põhjustatud replikatiivse potentsiaali kadumisest (telomeerid on neis rakkudes ok!).
+- OIS on tuumorsupressor mehhanism mis toimib healoomulised kasvajates ([onkogeensete radade aktivatsioon normaalsetes rakkudes põhjustas kiire jagunemise bloki](#7))
+
+- Pahaloomulistes kasvajates on OI mehhanismid juba tasalülitatud (mutatsioonid p53-s ja RB-s, telomeraas)
+
+- Mutatsioonid K-ras, B-raf, PTEN ja NF1 geenis käivitavad rakkudel senesentsi ka *in vivo*
+
+- *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumor-suppressor mehhanismina
+
+- Onkogeenide põhjustatud senesents on aktiivne protsess ning pole põhjustatud replikatiivse potentsiaali kadumisest (telomeerid on neis rakkudes ok!)
 
 ---
-# Premalignant lung adenomas induced by oncogenic K-ras are positive for markers of senescence, whereas malignant adenocarcinomas are negative.
+### Premalignant lung adenomas induced by oncogenic K-ras are positive for markers of senescence, whereas malignant adenocarcinomas are negative.
 
-```{r, fig.cap=""}
+```{r, out.width='60%'}
 knitr::include_graphics("http://www.nature.com/nature/journal/v436/n7051/images/436642a-f1.2.jpg")
 ```
 
 .footer[Pilt: 
-<a href="http://www.nature.com/nature/journal/v436/n7051/fig_tab/436642a_F1.html">
-Collado et al., 2004
-</a>.
+[Collado et al., 2004](http://www.nature.com/nature/journal/v436/n7051/fig_tab/436642a_F1.html)
 ]
 
 ---
@@ -238,10 +244,9 @@ Collado et al., 2004
 ]
 
 .pull-right[
-
-<img src="http://images.the-scientist.com/content/figures/0890-3670-050328-14-1-1.jpg" style="width:300px" >
-
-# HP1-beta ja PML valkude akumuleerumine kromatiinile initseerib DNA kahjustuste parandamise mehhanismid
+```{r, out.width='60%', fig.cap='HP1-beta ja PML valkude akumuleerumine kromatiinile initseerib DNA kahjustuste parandamise mehhanismid.'}
+knitr::include_graphics("http://images.the-scientist.com/content/figures/0890-3670-050328-14-1-1.jpg")
+```
 ]
 
 .footer[
@@ -251,9 +256,9 @@ Pilt: the-scientist.com
 ---
 ## *In vivo* ja *in vitro* senesentsi markerid
 
-Marker | Test
--------|-------
-SA-$\beta$-Gal	| histokeemia	
+```{r}
+tab <- readr::read_delim("Marker | Test
+SA-beta-Gal	| histokeemia	
 p16INK4a | WB, IHC
 p15INK4b | WB, IHC
 p53	| WB, IHC
@@ -261,7 +266,10 @@ ARF	| WB, IHC
 p21	| WB, IHC
 SAHFs	| IF
 DEC1 | WB, IHC
-DCR2 | WB, IHC
+DCR2 | WB, IHC", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 14)
+```
 
 <p style="font-size:12pt">WB, western blot. IHC, immunohistochemistry. IF, immunofluorescence. SAHFs, senescence-associated heterochromatic foci. DEC1, differentiated embryo-chondrocyte expressed. DCR2, decoy death receptor 2.</p>
 
@@ -279,31 +287,32 @@ knitr::include_graphics("http://www.nature.com/nature/journal/v436/n7051/images/
 
 - Sünnimärgid (*naevi*) sisaldavad sageli onkogeenseid BRAF V600E mutatsioone.
 - Sellised sünnimärgid jäävad siiski kümneteks aastateks vaikeolekusse ja ainult harva arenevad melanoomiks.
-- Pidev BRAFV600E ekspressioon inimese melanotsüütides indutseerib rakutsükli bloki, mida iseloomustab p16INK4a ja happelise $\beta$-galaktosidaasi ekspressioon (SA-$\beta$-Gal).
+- Pidev BRAFV600E ekspressioon inimese melanotsüütides indutseerib rakutsükli bloki, mida iseloomustab p16INK4a ja happelise $\beta$-galaktosidaasi ekspressioon (SA-beta-Gal).
 ]
 
 .footer[Pilt: 
-<a href="http://www.nature.com/nature/journal/v436/n7051/full/nature03890.html">
-BRAFE600-associated senescence-like cell cycle arrest of human naevi.
-</a>
+[BRAFE600-associated senescence-like cell cycle arrest of human naevi.](http://www.nature.com/nature/journal/v436/n7051/full/nature03890.html)
 ]
 
 ---
 Geenid mis indutseerivad senesentsi
 
-Geen | Muutus vähis |  Kontekst | Rakutüüp  | Vähk/kude  |	Viited
------|------------------------------------|----------------------------------------|---------------------------------------------|----------------------------------------------|-----
-Onkogeenid | | |  | |
-Ras |	*GOF* mutatsioon	| mutantse alleeli ekspressioon	| HDF ja MEF*	| kopsu adenoomid; aterosklerootilised kahjustused; rinnanäärme hüperplaasia	| [Serrano et al., 1997](http://www.sciencedirect.com/science/article/pii/S0092867400819029#), [Collado et al., 2005](http://www.nature.com/doifinder/10.1038/436642a), [Minamino et al., 2003](http://dx.doi.org/10.1161/01.CIR.0000093274.82929.22), [Sarkisian et al., 2007](http://www.nature.com/doifinder/10.1038/ncb1567)
-Raf	| *GOF* mutatsioon	| mutantse alleeli ekspressioon	| HDF, MEF*, melanotsüüdid | kopsu adenoomid |	[Dankort et al., 2007](http://genesdev.cshlp.org/content/21/4/379.full), [Michaloglou et al., 2005](http://www.nature.com/nature/journal/v436/n7051/full/nature03890.html)
-Akt	| *GOF* mutatsioon	| müristüleeritud alleeli üleekspressioon | endoteelirakud ja MEF | |	[Chen et al., 2005](http://www.nature.com/nature/journal/v436/n7051/full/nature03918.html), [Miyauchi et al., 2004](http://emboj.embopress.org/content/23/1/212.long)
-E2F1/3	| amplifikatsioon	| üleekspressioon	| HDF	| ajuripatsi hüperplaasia	| [Dimri et al., 2000](http://mcb.asm.org/content/20/1/273.long), [Lazzerini Denchi et al., 2005](http://mcb.asm.org/content/25/7/2660.full)
-Cyclin E | amplifikatsioon  | üleekspressioon	| U20S	| |	[Bartkova et al., 2006](http://www.nature.com/nature/journal/v444/n7119/full/nature05268.html)
-mos	| translokatsioon/üleekspressioon  | üleekspressioon	| HDF	| |	[Bartkova et al., 2006](http://www.nature.com/nature/journal/v444/n7119/full/nature05268.html)
-cdc6 | üleekspressioon | üleekspressioon | HDF | | [Bartkova et al., 2006](http://www.nature.com/nature/journal/v444/n7119/full/nature05268.html)
-Tumor suppressors | | | | |
-PTEN | *LOF* mutatsioon	| inaktivatsioon | MEF and IMR90 | HG-PIN	| [Chen et al., 2005](http://www.nature.com/nature/journal/v436/n7051/full/nature03918.html), [Courtois-Cox et al., 2006](http://www.sciencedirect.com/science/article/pii/S1535610806002893)
-NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom | [Courtois-Cox et al., 2006](http://www.sciencedirect.com/science/article/pii/S1535610806002893)
+```{r}
+tab <- readr::read_delim("Geen | Muutus vähis |  Kontekst | Rakutüüp  | Vähk/kude 
+Onkogeenid | | | |  
+Ras |	GOF mutatsioon	| mutantse alleeli ekspressioon	| HDF ja MEF*	| kopsu adenoomid; aterosklerootilised kahjustused; rinnanäärme hüperplaasia	
+Raf	| GOF mutatsioon	| mutantse alleeli ekspressioon	| HDF, MEF*, melanotsüüdid | kopsu adenoomid 
+Akt	| GOF mutatsioon	| müristüleeritud alleeli üleekspressioon | endoteelirakud ja MEF | 
+E2F1/3	| amplifikatsioon	| üleekspressioon	| HDF	| ajuripatsi hüperplaasia	
+Cyclin E | amplifikatsioon  | üleekspressioon	| U20S	| 
+mos	| translokatsioon/üleekspressioon  | üleekspressioon	| HDF	| 
+cdc6 | üleekspressioon | üleekspressioon | HDF | 
+Tumor suppressors | | | | 
+PTEN | LOF mutatsioon	| inaktivatsioon | MEF and IMR90 | HG-PIN	
+NF1 | LOF mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom ", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
+```
 
 <p style="font-size:10pt">Lühendid: GOF, gain of function; HDF, human diploid fibroblast (IMR90 ja BJ); LOF, loss of function; MEF, murine embryonic fibroblast; HG-PIN, high-grade prostatic intrapithelial neoplasia. MEF*: senesetsi indutseerimiseks on vajalik üleekspressioon. Tabel: <a href="http://www.nature.com/onc/journal/v27/n20/full/1210950a.html">Courtois-Cox, 2008</a></p>
 
@@ -311,25 +320,30 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 ---
 ## Telomeerid
 
-- Telomeerid on DNA-valk kompleksid, mis stabiliseerivad lineaarsed kromosoomide otsad. 
-- Imetajate telomeerid koosnevad 5-15 kb pikkustest **TTAGGG** kordusjärjestustest, mis lõppevad 3' üheahelalise *overhang*-iga.
-- Telomeeride pikkuse säilitamise eest vastutab **telomeeraas** või *alternative telomere length* (ALT) korrastus-mehhanism, mis põhineb rekombinatsioonil (>10% vähirakkudel).
+- Telomeerid on DNA-valk kompleksid, mis stabiliseerivad lineaarsed kromosoomide otsad
+
+- Imetajate telomeerid koosnevad 5-15 kb pikkustest **TTAGGG** kordusjärjestustest, mis lõppevad 3' üheahelalise *overhang*-iga
+
+- Telomeeride pikkuse säilitamise eest vastutab **telomeeraas** või *alternative telomere length* (ALT) korrastus-mehhanism, mis põhineb rekombinatsioonil (>10% vähirakkudel)
 
 ---
 ## Kromosoomid millel puuduvad õiged otsad on ebastabiilsed
 
 .pull-left[
+- 1930.ndatel täheldasid Hermann Müller ja Barbara McClintock erinevust katkenud kromosoomide käitumise ja telomeeride vahel
 
- 
-- 1930.ndatel täheldasid Hermann Müller ja Barbara McClintock erinevust katkenud kromosoomide käitumise ja telomeeride vahel.
-- Hermann Müller leidis, et kromosoomid millel puuduvad 'õiged' otsad on ebastabiilsed.
-- McClintock leidis, et katkenud otsad fuseeruvad kuid mitte kromosoomid. 
+- Hermann Müller leidis, et kromosoomid millel puuduvad 'õiged' otsad on ebastabiilsed
 
-
+- McClintock leidis, et katkenud otsad fuseeruvad kuid mitte kromosoomid
 ]
+
 .pull-right[
 
-<img src="http://profiles.nlm.nih.gov/ps/access/LLBBPP_.jpg" style="width:400px" >
+
+```{r, out.width='100%'}
+knitr::include_graphics("http://profiles.nlm.nih.gov/ps/access/LLBBPP_.jpg")
+```
+
 ]
 
 .footer[Pilt: Smithsonian Institution
@@ -338,83 +352,87 @@ NF1 | *LOF* mutatsioon | inaktivatsioon |	HDF |	dermaalne healoomuline fibroom |
 ---
 ## Telomeeride tähtsus - fusion-bridge-breakage
 
-- Telomeerid võimaldavad rakkudel eristada kromosoomi otsad katkenud DNAst.
+- Telomeerid võimaldavad rakkudel eristada kromosoomi otsad katkenud DNAst
+
 - DNA kahjustuse korral võib parandamine toimuda kahel viisil:
-    - homoloogne rekombinatsioon (HR).
-    - mittehomoloogne otste ühendamine (*non-homologous end-joining*, NHEJ).
-- Telomeerid hoiavad ära NHEJ põhjustatud kromosoomide fusiooni.
-- NHEJ põhjustatud *Fusion-bridge-breakage* tsüklid viivad genoomse ebastabiilsuse tekkeni.
-- Telomeerid annavad rakule autonoomse mehhanismi jagunemistsüklite lugemiseks.
+    - homoloogne rekombinatsioon (HR)
+    - mittehomoloogne otste ühendamine (*non-homologous end-joining*, NHEJ)
+    
+- Telomeerid hoiavad ära NHEJ põhjustatud kromosoomide fusiooni
+
+- NHEJ põhjustatud *Fusion-bridge-breakage* tsüklid viivad genoomse ebastabiilsuse tekkeni
+
+- Telomeerid annavad rakule autonoomse mehhanismi jagunemistsüklite lugemiseks
 
 ---
+class: inverse, middle, center
 
 <iframe width="640" height="390" src="http://www.youtube.com/embed/VuzeD_VyBO4" frameborder="0" allowfullscreen></iframe>
 
 ---
 ## Telomeeride pikkus määrab rakkude replikatiivse potentsiaali
 
-.pull-left[
-
-```{r, fig.cap=""}
-knitr::include_graphics("figures/TRF-vs-age.png")
+```{r, out.width='34%'}
+knitr::include_graphics(c("figures/TRF-vs-age.png", "figures/MPD-vs-TRFlength.png"))
 ```
 
-]
-.pull-right[
-
-<img src="figures/MPD-vs-TRFlength.png" style="width:300px" >
-]
-
 .footer[Pildid: 
-<a href="http://www.pnas.org/content/89/21/10114.full.pdf">
-Allsopp et al., 1992.
-</a>
-] 
+[Allsopp et al., 1992](http://www.pnas.org/content/89/21/10114.full.pdf)
+]
 
 ---
 # Telomeeride lühenemine lõppeb kriisiga ja võib põhjustada immortalisatsiooni
 
-- SV40 large-T transformeeritud inimese neeru fibroblastid (HEK) jagunevad kuni telomeeride lühenemiseni ~1.5 kb pikkusteks.
-- Lühenenud telomeerid põhjustavad rakkudes nö. kriisi, millest vähesed ellujäävad kloonid väljuvad immortaliseerununa.
-- Immortaliseerunud rakud ekspresseerivad telomeraasi.
+- SV40 large-T transformeeritud inimese neeru fibroblastid (HEK) jagunevad kuni telomeeride lühenemiseni ~1.5 kb pikkusteks
+
+- Lühenenud telomeerid põhjustavad rakkudes nö. kriisi, millest vähesed ellujäävad kloonid väljuvad immortaliseerununa
+
+- Immortaliseerunud rakud ekspresseerivad telomeraasi
 
 .pull-left[
 
-```{r, out.width=400}
+```{r, out.width='80%', fig.align='right'}
 knitr::include_graphics("http://www.ncbi.nlm.nih.gov/corecgi/tileshop/tileshop.fcgi?p=PMC3&id=426330&s=6&r=1&c=1")
 ```
 
 ]
-.pull-right[
 
-<img src="figures/crisis.png" style="width:200px" >
+.pull-right[
+```{r, out.width='40%', fig.align='left'}
+knitr::include_graphics("figures/crisis.png")
+```
 ]
 
 .footer[Pildid: 
-<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC556651/?page=1">
-Counter et al., 1992.
-</a>
+[Counter et al., 1992](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC556651/?page=1)
 ] 
 
 ---
-## Telomeeride lühenemine ehk "*end replication problem*"
+## Telomeeride lühenemine ehk *end replication problem*
 
 Telomeerid lühenevad iga raku jagunemisega S-faasis
+
 - DNA otste replikatsiooni probleem "*end replication problem*":
-    - DNA replikatsioon on bidirektsionaalne.
-    - DNA polümeraasid toimivad ühesuunaliselt.
-- DNA polümeraasid vajavad replikatsiooni alustamiseks praimerit.
-- DNA replikatsiooniga jääb kromosoomi otstest 50-200 bp DNA lõik 3' otsast replitseerumata (3' *overhang*).
-- Rakud mille telomeerid on 10-12 kb pikad jagunevad 50-60 korda.
-- Rakud lähevad senesentsi kui telomeerid "kuluvad" 4-6 kb pikkusteks.
+    - DNA replikatsioon on bidirektsionaalne
+    - DNA polümeraasid toimivad ühesuunaliselt
+
+- DNA polümeraasid vajavad replikatsiooni alustamiseks praimerit
+
+- DNA replikatsiooniga jääb kromosoomi otstest 50-200 bp DNA lõik 3' otsast replitseerumata (3' *overhang*)
+- Rakud mille telomeerid on 10-12 kb pikad jagunevad 50-60 korda
+
+- Rakud lähevad senesentsi kui telomeerid "kuluvad" 4-6 kb pikkusteks
 
 ---
 ## Telomeeride erosioon toimib tuumor-suppressor mehhanismina
 
-- Inimese rakkude immortaliseerumisel toimub alati ka telomeeride korrashoiu mehhanismi käivitamine kas **telomeraasi** üle-ekspressiooni või **ALT mehhanismi** käivitamise teel.
-- 60-80% inimese vähkidest on telomeraas positiivsed, viidates et telomeeride erosiooni vältimine on vähis sama tavaline kui Rb ja p53 inaktivatsioon.
-- Tüvirakkudes on telomeraasi aktiivsus madalam kui vähirakkudes ja paljudes normaalsetes jagunevates rakkudes puudub telomeraasi ekspressioon täielikult.
-- Siit võib järeldada, et **telomeeride regeneratsioon on vähis hädavajalik vähirakkude jagunemispotentsiaali säilitamiseks**.
+- Inimese rakkude immortaliseerumisel toimub alati ka telomeeride korrashoiu mehhanismi käivitamine kas **telomeraasi** üle-ekspressiooni või **ALT mehhanismi** käivitamise teel
+
+- 60-80% inimese vähkidest on telomeraas positiivsed, viidates et telomeeride erosiooni vältimine on vähis sama tavaline kui Rb ja p53 inaktivatsioon
+
+- Tüvirakkudes on telomeraasi aktiivsus madalam kui vähirakkudes ja paljudes normaalsetes jagunevates rakkudes puudub telomeraasi ekspressioon täielikult
+
+- Siit võib järeldada, et **telomeeride regeneratsioon on vähis hädavajalik vähirakkude jagunemispotentsiaali säilitamiseks**
 
 ---
 ## Inhibition of telomerase limits the growth of human cancer cells
@@ -432,22 +450,21 @@ Effects of DN-hTERT on cell proliferation.
 Clonal isolates analyzed are from cell lines LoVo a, HA-1 b, SW613 c, 36M d and GM847 cells e; in order of initial telomere length from shortest (LoVo) to longest (GM847). For each cell line, two clones are shown expressing the control retrovirus ($\square$, $\blacksquare$), WT-hTERT ($\circ$, $\bullet$) or DN-hTERT ($\triangle$, $\blacktriangle$).
 ]
 
-.footer[Ref.: 
-<a href="http://www.nature.com/nm/journal/v5/n10/full/nm1099_1164.html">
-Hahn et al., 1999.
-</a>
-] 
+.footer[Ref: 
+[Hahn et al., 1999](http://www.nature.com/nm/journal/v5/n10/full/nm1099_1164.html)
+]
 
 ---
-# Telomeraas ja ALT
+## Telomeraas ja ALT
 
+.pull-left[
 Telomeraasi holoensüüm koosneb kahest konserveerunud komponendist: 
 - **Telomeraas** (**TERT**), mis sisaldab telomeraasi pöördtranskriptaasi domääni ja 
 - **RNA** **TR** (**TERC**), mis moodustab TERT-iga kompleksi ja **toimib praimerina** telomeersete korduste sünteesil.
 - Lisaks on kompleksis ka **dyskerin**, mis stabiliseerib telomeraasi holoensüümi.
 - Mutatsioonid TERT, TR või DKC1 geenides põhjustavad inimesel telomeerseid sündroome.
-
 ]
+
 .pull-right[
 
 ```{r, out.width=400}
@@ -456,9 +473,7 @@ knitr::include_graphics("http://www.nature.com/nrg/journal/v13/n10/images/nrg324
 ]
 
 .footer[Pilt: 
-<a href="http://www.nature.com/nrg/journal/v13/n10/full/nrg3246.html">
-Armanios & Blackburn, 2012.
-</a>
+[Armanios & Blackburn, 2012](http://www.nature.com/nrg/journal/v13/n10/full/nrg3246.html)
 ] 
 
 ---
@@ -472,7 +487,7 @@ Armanios & Blackburn, 2012.
 ]
 .pull-right[
 
-```{r, fig.cap="alt"}
+```{r}
 knitr::include_graphics("http://www.nature.com/nrg/journal/v11/n5/images/nrg2763-f2.jpg")
 ```
 ]
@@ -487,19 +502,21 @@ Cesare & Reddel, 2010.
 ## Telomeraasi üle-ekpressioon vähis
 
 .pull-left[
-```{r telomeraas, echo=FALSE, fig.show='asis'}
-shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
-                      Pathology=c("Normal oral mucosa",
+```{r telomeraas, message=FALSE, fig.width=4, out.width='100%'}
+library(tidyverse)
+library(stringr)
+shay <- list(data.frame(Tissue = rep("Head, neck and lung",7),
+                      Pathology = c("Normal oral mucosa",
                                   "Oral rinses from HNSCC",
                                   "Premalignant lesions",
                                   "HNSCC",
                                   "NSCLC",
                                   "SCLC",
                                   "Lung, adjacent tissue"),
-                      pos=c(1,14,25,112,98,15,3),
-                      tested=c(39,44,46,130,125,15,68)),
-           data.frame(Tissue=rep("GI tract",11),
-                      Pathology=c("Gastric metaplasia, adenoma",
+                      pos = c(1,14,25,112,98,15,3),
+                      tested = c(39,44,46,130,125,15,68)),
+           data.frame(Tissue = rep("GI tract",11),
+                      Pathology = c("Gastric metaplasia, adenoma",
                                   "Gastric carcinoma",
                                   "Gastric, adjacent tissue",
                                   "Colorectal adenoma",
@@ -510,17 +527,17 @@ shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                                   "Pancreatic, adjacent tissue",
                                   "Pancreatic brushings, bening",
                                   "Pancreatic brushings, carcinoma"),
-                      pos=c(4,72,4,20,123,58,0,41,5,0,8),
-                      tested=c(15,85,86,44,138,231,11,43,36,4,8)),
-           data.frame(Tissue=rep("Hepatic tissue",4),
-                      Pathology=c("Normal tissue",
+                      pos = c(4,72,4,20,123,58,0,41,5,0,8),
+                      tested = c(15,85,86,44,138,231,11,43,36,4,8)),
+           data.frame(Tissue = rep("Hepatic tissue",4),
+                      Pathology = c("Normal tissue",
                                   "Non-malignant liver disease",
                                   "Hepatocellular carcinoma",
                                   "Hepatic, adjacent tissue"),
-                      pos=c(0,43,149,1),
-                      tested=c(15,148,173,50)),
-           data.frame(Tissue=rep("Breast",8),
-                      Pathology=c("Normal tissue",
+                      pos = c(0,43,149,1),
+                      tested = c(15,148,173,50)),
+           data.frame(Tissue = rep("Breast",8),
+                      Pathology = c("Normal tissue",
                                   "Breast fibrocytic disease",
                                   "Breast fibroadenoma",
                                   "Breast carcinoma in situ",
@@ -528,10 +545,10 @@ shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                                   "Adjacent tissue",
                                   "Breast fine needle aspirates, benign",
                                   "Breast fine needle aspirates, malignant"),
-                      pos=c(0,0,11,9,300,4,4,26),
-                      tested=c(15,34,40,12,339,85,47,32)),
-           data.frame(Tissue=rep("Female reproductive tract",10),
-                      Pathology=c("Ovary (fetal)",
+                      pos = c(0,0,11,9,300,4,4,26),
+                      tested = c(15,34,40,12,339,85,47,32)),
+           data.frame(Tissue = rep("Female reproductive tract",10),
+                      Pathology = c("Ovary (fetal)",
                                   "Ovary (adult)",
                                   "Unfertilised egg",
                                   "Normal myometrium or endometrium",
@@ -541,20 +558,20 @@ shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                                   "Cervical carcinoma",
                                   "Vaginal carcinoma",
                                   "Ovarian carcinoma"),
-                      pos=c(2,1,0,0,0,5,4,16,3,21),
-                      tested=c(2,3,3,18,14,5,4,16,3,23)),
-           data.frame(Tissue=rep("Male reproductive tract",7),
-                      Pathology=c("Testis (fetal, adult)",
+                      pos = c(2,1,0,0,0,5,4,16,3,21),
+                      tested = c(2,3,3,18,14,5,4,16,3,23)),
+           data.frame(Tissue = rep("Male reproductive tract",7),
+                      Pathology = c("Testis (fetal, adult)",
                                   "Mature spermatozoa",
                                   "Normal prostate",
                                   "Benign prostate hyperplasia",
                                   "Benign prostate hyperplasia with carcinoma",
                                   "High grade prostatic intra-epithelial neoplasia",
                                   "Prostate carcinoma"),
-                      pos=c(3,0,0,1,4,3,52),
-                      tested=c(3,3,43,20,35,5,58)),
-           data.frame(Tissue=rep("Kidney and urinary tract",10),
-                      Pathology=c("Normal urothelium",
+                      pos = c(3,0,0,1,4,3,52),
+                      tested = c(3,3,43,20,35,5,58)),
+           data.frame(Tissue = rep("Kidney and urinary tract",10),
+                      Pathology = c("Normal urothelium",
                                   "Normal voided urine",
                                   "Dysplastic urothelium",
                                   "Bladder carcinoma (all stages)",
@@ -564,10 +581,10 @@ shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                                   "Kidney, adjacent tissue",
                                   "Wilms' tumor",
                                   "Wilms' tumor, adjacent tissue"),
-                      pos=c(0,3,3,172,29,16,95,0,6,2),
-                      tested=c(45,83,7,185,40,56,115,115,6,6)),
-           data.frame(Tissue=rep("Neural tissue",12),
-                      Pathology=c("Normal retina and brain",
+                      pos = c(0,3,3,172,29,16,95,0,6,2),
+                      tested = c(45,83,7,185,40,56,115,115,6,6)),
+           data.frame(Tissue = rep("Neural tissue",12),
+                      Pathology = c("Normal retina and brain",
                                   "Retinoblastoma",
                                   "GBM",
                                   "Oligodendroglioma",
@@ -579,17 +596,17 @@ shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                                   "Ganglioneuroma",
                                   "Neuroblastoma",
                                   "Adjacent tissue"),
-                      pos=c(0,17,45,19,2,5,12,9,0,0,99,0),
-                      tested=c(9,34,60,19,20,30,13,9,3,4,105,13)),
-           data.frame(Tissue=rep("Skin",4),
-                      Pathology=c("Normal epidermis",
+                      pos = c(0,17,45,19,2,5,12,9,0,0,99,0),
+                      tested = c(9,34,60,19,20,30,13,9,3,4,105,13)),
+           data.frame(Tissue = rep("Skin",4),
+                      Pathology = c("Normal epidermis",
                                   "Squamous cell carcinoma",
                                   "Basal cell carcinoma",
                                   "Melanoma"),
-                      pos=c(4,15,73,6),
-                      tested=c(9,18,77,7)),
-           data.frame(Tissue=rep("Hematological tissues",14),
-                      Pathology=c("Myeloma",
+                      pos = c(4,15,73,6),
+                      tested = c(9,18,77,7)),
+           data.frame(Tissue = rep("Hematological tissues",14),
+                      Pathology = c("Myeloma",
                                   "Lymphoma, low grade",
                                   "Lymphoma, high grade",
                                   "Lymph nodes, benign",
@@ -603,8 +620,8 @@ shay<-list(data.frame(Tissue=rep("Head, neck and lung",7),
                                   "Acute promyelocytic leukaemia",
                                   "Acute lymphoblastic leukaemia",
                                   "Acute myeloid leukemia"),
-                      pos=c(1,12,16,5,23,4,30,1,21,2,4,1,4,47),
-                      tested=c(1,14,16,15,23,6,42,3,21,14,7,1,5,64))
+                      pos = c(1,12,16,5,23,4,30,1,21,2,4,1,4,47),
+                      tested = c(1,14,16,15,23,6,42,3,21,14,7,1,5,64))
 )
 shay <- do.call("rbind", shay)
 shay$State <- "malignant"
@@ -622,18 +639,18 @@ benign <- unique(c(grep("[Bb]enign", shay$Pathology),
                    grep("ordinary", shay$Pathology)))
 shay$State[benign] <- "benign"
 
-shay <- mutate(shay, Percent=pos*100/tested)
+shay <- mutate(shay, Percent = pos * 100 / tested)
 
 ggplot(shay) + 
-  geom_bar(aes(y=Percent, x=Pathology, fill=State), stat="identity") + 
+  geom_bar(aes(Pathology, Percent, fill = State), stat = "identity") + 
   ylab("% positive") +
   scale_fill_colorblind() +
-  facet_wrap(~Tissue, scales="free_x") + 
-  scale_x_discrete(labels=function(x) abbreviate(x, minlength=16)) +
-  theme(axis.text.x=element_text(angle=90, vjust=0.5, color="black"),
-        axis.text.y=element_text(color="black"),
+  facet_wrap(~ str_wrap(Tissue, 15), scales = "free_x") + 
+  scale_x_discrete(labels = function(x) str_trunc(x, 12)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, color = "black", size = 6),
+        axis.text.y = element_text(color = "black"),
         axis.title.x = element_blank(),
-        legend.title=element_blank(),
+        legend.title = element_blank(),
         legend.position = c(1, 0), 
         legend.justification = c(1.5, 0.5))
 ```
@@ -643,18 +660,21 @@ ggplot(shay) +
 
 Telomeraas positiivsed kasvajad (%, keskmine ja 95% usalduspiirid.) 
 ```{r keskmine, echo=FALSE, results='markup' }
-out <- ddply(shay,"State", summarise, Mean=round(mean(Percent),digits=1), 
-      Lower = round(boot.ci(boot(Percent, function(u,i) mean(u[i]), R = 999), type = "perc")$percent[4],digits=1),
-      Upper = round(boot.ci(boot(Percent, function(u,i) mean(u[i]), R = 999), type = "perc")$percent[5],digits=1))
-kable(out)
+shay %>% 
+  group_by(State) %>% 
+  summarise(Mean = round(mean(Percent), digits = 1), 
+      Lower = round(boot.ci(boot(Percent, function(u, i) mean(u[i]), R = 999), type = "perc")$percent[4], digits = 1),
+      Upper = round(boot.ci(boot(Percent, function(u, i) mean(u[i]), R = 999), type = "perc")$percent[5], digits = 1)) %>% 
+  knitr::kable(format = 'html')
 ```
-]
-
 
 .footer[Andmed: 
 <a href="http://www4.utsouthwestern.edu/cellbio/shay-wright/publications/Bachetti.EJC.97.pdf">
 Shay, J. W. & Bacchetti, S. A survey of telomerase activity in human cancer. Eur. J. Cancer 33, 787–791 (1997).
 </a>]
+
+]
+
 
 ---
 ## Telomeeride otsas on sõlm
@@ -684,29 +704,37 @@ Karlseder, 1999
 ---
 ## T-loop
 
-```{r, fig.cap="tloop"}
+```{r, out.width='100%'}
 knitr::include_graphics("figures/tloop.jpg")
 ```
 
 ---
 ## TRF valgud
 
-- TRF1 reguleerib telomeeride pikkust.
-    - TRF1 on seotud negatiivse tagasisidega, seostub otse telomeeridele ja supresseerib telomeeride elongatsiooni.
-    - pikaajaline TRF1 üle-ekpressioon telomeraas-positiivetes HT1080 vähirakkudes põhjustas telomeeride lühenemise.
-- TRF2 vastutab selle eest, et telomeerid oleksid vinks-vonks korras.
-- TRF2 inhibitsioon põhjustab 3' *overhang*-i kadumise telomeeri otsast ja viib kromosoomi otste fuseerumiseni.
+.pull-left[
+- TRF1 reguleerib telomeeride pikkust
+    - TRF1 on seotud negatiivse tagasisidega, seostub otse telomeeridele ja supresseerib telomeeride elongatsiooni
+    - pikaajaline TRF1 üle-ekpressioon telomeraas-positiivetes HT1080 vähirakkudes põhjustas telomeeride lühenemise
+- TRF2 vastutab selle eest, et telomeerid oleksid vinks-vonks korras
+- TRF2 inhibitsioon põhjustab 3' *overhang*-i kadumise telomeeri otsast ja viib kromosoomi otste fuseerumiseni
+]
 
-```{r, out.width=200}
+.pull-right[
+```{r, out.width='100%'}
 knitr::include_graphics("figures/trf1.png")
 ```
+]
 
 ---
 ## TRF2 kaitseb inimese telomeere otsipidi kokku fuseerumast
 
-Muteerunud DNA sidumise domääniga TRF2 (TRF2ΔBΔM) ekspressioon rakkudes viib otsipidi fuseerunud kromosoomide tekkeni.
+Muteerunud DNA sidumise domääniga TRF2 (TRF2ΔBΔM) ekspressioon rakkudes viib otsipidi fuseerunud kromosoomide tekkeni
 
-Anafaasi rakud, milles on TRF2ΔBΔM-indutseeritud anafaasi sillad ja lohisev kromosoom (vasakpoolne rakk). DNA on värvitud DAPI-ga.
+Anafaasi rakud, milles on TRF2ΔBΔM-indutseeritud anafaasi sillad ja lohisev kromosoom (vasakpoolne rakk). DNA on värvitud DAPI-ga
+
+```{r, out.width='100%'}
+knitr::include_graphics("figures/TRF2dBdM.jpg")
+```
 
 .footer[Pilt: 
 <a href="http://www.sciencedirect.com/science/article/pii/S0092867400809320">
@@ -714,17 +742,15 @@ van Steensel, 1998
 </a>
 ]
 
-
-```{r, fig.cap="trf2-end-to-end-fusions"}
-knitr::include_graphics("figures/TRF2dBdM.jpg")
-```
-
 ---
+
 ## Telomeeride avanemine ja lühenemine indutseerib apoptoosi
 
-- TRF2 seostumine TTAGGG kordustele maskeerib kromosoomi otsad DNA kahjustuste kontrolli mehhanismi eest.
-- TRF2 inhibitsioon põhjustab kiire ATM/p53–sõltuva DNA kahjustuse kontrollpunkti aktivatsiooni, rakutsükli arresti ja suunab rakud apoptoosi.
-- Katmata kromosoomi otsad mis tekivad TRF2 funktsiooni inhibeerimisel seostuvad DNA kahjustuste kontrolli valkudega 53BP1, $\gamma$-H2AX, Rad17, ATM ja Mre11.
+- TRF2 seostumine TTAGGG kordustele maskeerib kromosoomi otsad DNA kahjustuste kontrolli mehhanismi eest
+
+- TRF2 inhibitsioon põhjustab kiire ATM/p53–sõltuva DNA kahjustuse kontrollpunkti aktivatsiooni, rakutsükli arresti ja suunab rakud apoptoosi
+
+- Katmata kromosoomi otsad mis tekivad TRF2 funktsiooni inhibeerimisel seostuvad DNA kahjustuste kontrolli valkudega 53BP1, $\gamma$-H2AX, Rad17, ATM ja Mre11
 
 ```{r, out.width=400}
 knitr::include_graphics("figures/TRF2p53apoptosis.jpg")
@@ -735,39 +761,42 @@ knitr::include_graphics("figures/TRF2p53apoptosis.jpg")
 
 .pull-left[
 
-- Hiirtel on kolm korda pikemad telomeerid kui inimestel, samas on nende eluiga lühike.
-- TR knockout-hiired ei ole resistentsed tumorigeneesile.
-- mTR null hiirel lühenevad telomeerid 4–5 kb generatsiooni kohta.
-- Võrreldes esimese generatsiooni loomadega oli kolmanda (G3) ja kuuenda (G6) generatsiooni hiirtel probleeme haavade paranemisega, hematopoeesiga, neil oli suurem kasvajate intsidents ja lühem eluiga.
+- Hiirtel on kolm korda pikemad telomeerid kui inimestel, samas on nende eluiga lühike
 
-]
+- TR knockout-hiired ei ole resistentsed tumorigeneesile
 
-.pull-right[
-Increased Incidence of Skin Lesions, Alopecia, and Hair Graying in Aging mTR−/− Mice
-```{r, out.width=360}
-knitr::include_graphics("http://ars.els-cdn.com/content/image/1-s2.0-S0092867400805802-gr1.jpg")
-```
-]
+- mTR null hiirel lühenevad telomeerid 4–5 kb generatsiooni kohta
+
+- Võrreldes esimese generatsiooni loomadega oli kolmanda (G3) ja kuuenda (G6) generatsiooni hiirtel probleeme haavade paranemisega, hematopoeesiga, neil oli suurem kasvajate intsidents ja lühem eluiga
 
 .footer[ Pilt: 
 <a href="http://www.sciencedirect.com/science/article/pii/S0092867400805802">Rudolph, 1999</a>
 ]
 
+]
+
+.pull-right[
+Increased Incidence of Skin Lesions, Alopecia, and Hair Graying in Aging mTR−/− Mice
+```{r, out.width='100%'}
+knitr::include_graphics("http://ars.els-cdn.com/content/image/1-s2.0-S0092867400805802-gr1.jpg")
+```
+]
+
 ---
-# Telomere dysfunction promotes non-reciprocal translocations and epithelial cancers in mice
+## Telomere dysfunction promotes non-reciprocal translocations and epithelial cancers in mice
 
 .pull-left[
 
-```{r, out.width=360}
+```{r, out.width='80%'}
 knitr::include_graphics("http://www.nature.com/nature/journal/v406/n6796/images/406641aa.2.jpg")
 ```
 ]
 
 .pull-right[
 
-Kaplan–Meier analysis of tumour incidence in p53 mutant mice divided on the basis of generation of telomerase deficiency.
+- Kaplan–Meier analysis of tumour incidence in p53 mutant mice divided on the basis of generation of telomerase deficiency
 
-Telomere attrition in ageing telomerase-deficient p53 mutant mice promotes the development of epithelial cancers by a process of fusion-bridge breakage that leads to the formation of complex non-reciprocal translocations—a classical cytogenetic feature of human carcinomas.
+- Telomere attrition in ageing telomerase-deficient p53 mutant mice promotes the development of epithelial cancers by a process of fusion-bridge breakage that leads to the formation of complex non-reciprocal translocations—a classical cytogenetic feature of human carcinomas
 ]
 
 .footer[ Pilt: 
@@ -806,9 +835,12 @@ O'Sullivan et al., 2002.
 ---
 ## Telomeerid vähi arengus
 
-```{r, fig.cap=""}
+
+```{r, out.width='100%'}
 knitr::include_graphics("http://www.med.nyu.edu/skirball-lab/sfeirlab/Research_files/shapeimage_4.png")
 ```
+
+
 
 .footer[Pilt: Skirball Institute of Biomolecular Medicine.
 ]
@@ -841,3 +873,6 @@ class: inverse, middle
 - [Immuunsus](http://tpall.github.io/Immuunsus)
 - [Vähiravimid](http://tpall.github.io/Vahiravim)
 ]
+
+GitHub: https://github.com/tpall/Immortalisatsioon
+
