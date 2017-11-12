@@ -18,7 +18,6 @@ class: inverse, middle, center
 # Recap
 
 ---
-
 ## p53 on muteerunud kuni pooltes kasvajates
 
 ```{r}
