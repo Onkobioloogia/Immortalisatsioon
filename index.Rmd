@@ -237,7 +237,7 @@ Serrano, 1997
 
 - Mutatsioonid K-ras, B-raf, PTEN ja NF1 geenis käivitavad rakkudel senesentsi ka *in vivo*
 
-- *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumor-suppressor mehhanismina
+- *In vivo* andmed toetavad hüpoteesi, et senesents toimib tuumorsupressor mehhanismina
 
 - Onkogeenide põhjustatud senesents on aktiivne protsess ning pole põhjustatud replikatiivse potentsiaali kadumisest (telomeerid on neis rakkudes ok!)
 
