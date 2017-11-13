@@ -124,7 +124,7 @@ knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s540
 ```
 
 ---
-## Stress ja kriis
+## Rakkudel on limiteeritud jagunemiste arv
 
 - Inimese kehas olevatel rakkudel on limiteeritud jagunemiste arv
 
@@ -132,7 +132,13 @@ knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s540
 
 - Kuidas üldse rakk kontrollib oma jagunemiste arvu, see peab toimuma igas rakus autonoomselt?
 
-- Kaks regulatoorset mehhanismi, mis kontrollivad rakkude jagunemispotentsiaali: kumulatiivne **stress** ja **kriis**, kui kogu jagunemiste arv on ära kasutatud.
+---
+
+## Stress ja kriis
+
+- Kaks regulatoorset mehhanismi, mis kontrollivad rakkude jagunemispotentsiaali: 
+      - kumulatiivne stress ja 
+      - kriis, kui kogu jagunemiste arv on ära kasutatud.
 
 ---
 ## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
