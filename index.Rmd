@@ -401,7 +401,10 @@ knitr::include_graphics("http://profiles.nlm.nih.gov/ps/access/LLBBPP_.jpg")
 ---
 class: inverse, middle, center
 
+
 <iframe width="640" height="390" src="http://www.youtube.com/embed/VuzeD_VyBO4" frameborder="0" allowfullscreen></iframe>
+
+.footer[http://www.youtube.com/embed/VuzeD_VyBO4]
 
 ---
 ## Telomeeride pikkus määrab rakkude replikatiivse potentsiaali
