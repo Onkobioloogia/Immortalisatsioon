@@ -143,6 +143,11 @@ knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s540
       - kriis, kui kogu jagunemiste arv on ära kasutatud.
 
 ---
+class: inverse, center, middle
+
+# Stress
+
+---
 ## Koekultuuri stress indutseerib senesentsi
 
 .pull-left[
@@ -242,7 +247,10 @@ Serrano, 1997
 - Onkogeenide põhjustatud senesents on aktiivne protsess ning pole põhjustatud replikatiivse potentsiaali kadumisest (telomeerid on neis rakkudes ok!)
 
 ---
-### Premalignant lung adenomas induced by oncogenic K-ras are positive for markers of senescence, whereas malignant adenocarcinomas are negative.
+
+## OIS _in vivo_
+
+> Premalignant lung adenomas induced by oncogenic K-ras are positive for markers of senescence, whereas malignant adenocarcinomas are negative.
 
 ```{r, out.width='60%'}
 knitr::include_graphics("http://www.nature.com/nature/journal/v436/n7051/images/436642a-f1.2.jpg")
@@ -337,6 +345,11 @@ kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
 
 <p style="font-size:10pt">Lühendid: GOF, gain of function; HDF, human diploid fibroblast (IMR90 ja BJ); LOF, loss of function; MEF, murine embryonic fibroblast; HG-PIN, high-grade prostatic intrapithelial neoplasia. MEF*: senesetsi indutseerimiseks on vajalik üleekspressioon. Tabel: <a href="http://www.nature.com/onc/journal/v27/n20/full/1210950a.html">Courtois-Cox, 2008</a></p>
 
+
+---
+class: inverse, center, middle
+
+# Kriis
 
 ---
 ## Telomeerid
