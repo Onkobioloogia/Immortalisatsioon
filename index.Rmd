@@ -136,16 +136,11 @@ knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s540
 
 ## Stress ja kriis
 
-- Kaks regulatoorset mehhanismi, mis kontrollivad rakkude jagunemispotentsiaali: 
+- Kaks regulatoorset mehhanismi, mis kontrollivad rakkude jagunemispotentsiaali:
+
       - kumulatiivne stress ja 
+      
       - kriis, kui kogu jagunemiste arv on ära kasutatud.
-
----
-## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
-
-```{r}
-knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg")
-```
 
 ---
 ## Koekultuuri stress indutseerib senesentsi
@@ -177,6 +172,14 @@ Chen et al., 1995
 Fu et al., 2003
 </a>.
 ] 
+
+---
+## Rakkude senesentsi võib põhjustada erinevat tüüpi stress  
+
+```{r}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg")
+```
+
 
 ---
 ## Tsükliinkinaasi inhibiitorite induktsioon
