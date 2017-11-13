@@ -85,7 +85,7 @@ knitr::include_graphics("http://www.nature.com/nrm/journal/v1/n1/images/nrm1000_
 - Rakud lõpetavad jagunemise kusagil peale 60 jagunemist
 - Sellised mittejagunevad rakud on saavutanud replikatiivse vananemise seisundi (*repilcative senescence*/*senescence*)
 - Senesentsed rakud jäävad metaboolselt aktiivseks kuid näivad olevat kaotanud jäädavalt võime siseneda aktiivselt rakutsükklisse.
-- Kasvufaktorite olemasolul võivad sellised sellised senesentsed rakud püsida koekultuuris elus pikalt.
+- Kasvufaktorite olemasolul võivad sellised senesentsed rakud püsida koekultuuris pikalt elus.
 
 ```{r}
 knitr::include_graphics("http://content.presspage.com/uploads/1369/senescence.jpg")
